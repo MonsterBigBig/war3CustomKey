@@ -1,0 +1,2698 @@
+//////////////////////////////////////////////////////
+//这个文件包含所有的单位、英雄、
+//升级、建筑物和技能。请
+//参考CustomKeyInfo.txt来获取关于如何使用
+//这个文件的信息。
+//////////////////////////////////////////////////////
+ 
+ 
+/////////////////////////////
+//共享的命令（攻击等）
+/////////////////////////////
+ 
+//移动
+[CmdMove]
+Tip=(|cffffcc00M|r)移动
+Hotkey=M
+ 
+//攻击
+[CmdAttack]
+Tip=(|cffffcc00A|r)攻击
+Hotkey=A
+ 
+//攻击地面
+[CmdAttackGround]
+Tip= (|cffffcc00G|r)攻击地面
+Hotkey=G
+ 
+//建造建筑物（一般的）
+[CmdBuild]
+Tip=(|cffffcc00B|r)建造建筑物
+Hotkey=B
+ 
+//建造建筑物（人族）
+[CmdBuildHuman]
+Tip=(|cffffcc00B|r)建造建筑物
+Hotkey=B
+ 
+//建造建筑物（兽族）
+[CmdBuildOrc]
+Tip=(|cffffcc00B|r)建造建筑物
+Hotkey=B
+ 
+//建造建筑物（暗夜精灵）
+[CmdBuildNightElf]
+Tip=(|cffffcc00B|r)建造建筑物
+Hotkey=B
+ 
+//召唤建筑物（亡灵）
+[CmdBuildUndead]
+Tip=(|cffffcc00B|r)召唤建筑物
+Hotkey=B
+ 
+//取消
+[CmdCancel]
+Tip= (|cffffcc00ESC|r) 取消
+Hotkey=512
+ 
+//取消建造
+[CmdCancelBuild]
+Tip=(|cffffcc00ESC|r) 取消
+Hotkey=512
+ 
+//取消训练
+[CmdCancelTrain]
+Tip=(|cffffcc00ESC|r) 取消
+Hotkey=512
+ 
+//取消复活
+[CmdCancelRevive]
+Tip=(|cffffcc00ESC|r) 取消
+Hotkey=512
+ 
+//保持原位
+[CmdHoldPos]
+Tip=(|cffffcc00H|r)保持原位
+Hotkey=H
+ 
+//巡逻
+[CmdPatrol]
+Tip=(|cffffcc00P|r)巡逻
+Hotkey=P
+ 
+//设集结点
+[CmdRally]
+Tip= (|cffffcc00Y|r)设集结点
+Hotkey=Y
+ 
+//英雄技能
+[CmdSelectSkill]
+Tip= (|cffffcc00O|r)英雄技能
+Hotkey=O
+ 
+//停止
+[CmdStop]
+Tip=(|cffffcc00S|r)停止
+Hotkey=S
+ 
+//采集
+[Ahar]
+Tip=(|cffffcc00G|r)采集
+Untip= (|cffffcc00e|r)返送资源
+Hotkey=G
+Unhotkey=E
+ 
+//采集木材
+[Ahrl]
+Tip=(|cffffcc00G|r)采集
+Untip=(|cffffcc00e|r)返送资源
+Hotkey=G
+Unhotkey=E
+ 
+//农民修理技能
+[Arep]
+Tip=(|cffffcc00R|r)修理
+Untip="|cffc3dbff右键激活自动施放。|r"
+Hotkey=R
+Unhotkey=R
+ 
+//中立单位的互动（选择用户命令）
+[Anei]
+Tip= (|cffffcc00U|r)选择使用者
+Hotkey=U
+ 
+//装载
+[Aloa]
+Tip=(|cffffcc00L|r)装载
+Hotkey=L
+ 
+//卸载全部
+[Adro]
+Tip=(|cffffcc00U|r)卸载全部
+Hotkey=U
+ 
+//卸载（海上运输工具）
+[Sdro]
+Tip=(|cffffcc00U|r)卸载全部
+Hotkey=U
+ 
+/////////////////////////////
+//人族单位和技能
+/////////////////////////////
+ 
+//龙鹰骑士 
+[hdhw]
+Hotkey=D
+Tip= (|cffffcc00D|r)训练龙鹰骑士
+ 
+//空中锁镣
+[Amls]
+Tip= (|cffffcc00e|r)空中锁镣
+Hotkey=E
+ 
+//乌云
+[Aclf]
+Tip=(|cffffcc00C|r)乌云技能
+Hotkey=C
+ 
+//步兵
+[hfoo]  
+Hotkey=F
+Tip= (|cffffcc00F|r)步兵
+ 
+//防御
+[Adef]
+Tip=(|cffffcc00D|r)防御
+Untip= (|cffffcc00D|r)停止防御
+Hotkey=D
+Unhotkey=D
+ 
+//飞行机器 
+[hgyr]
+Hotkey=F
+Tip=(|cffffcc00F|r) 生产飞行机器 
+ 
+//骑士
+[hkni]
+Hotkey=K
+Tip= (|cffffcc00K|r) 训练骑士
+ 
+//牧师
+[hmpr]
+Hotkey=P
+Tip= (|cffffcc00P|r)训练牧师
+ 
+//心灵之火
+[Ainf]
+Tip= (|cffffcc00F|r)心灵之火
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=F
+Unhotkey=F
+ 
+//医疗
+[Ahea]
+Tip=(|cffffcc00e|r)医疗
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=E
+Unhotkey=E
+ 
+//驱逐魔法
+[Adis]
+Tip=(|cffffcc00D|r)驱逐魔法
+Hotkey=D
+ 
+//迫击炮小队
+[hmtm]
+Hotkey=M
+Tip= (|cffffcc00M|r)训练迫击炮小队
+ 
+//照明弹
+[Afla]
+Tip=(|cffffcc00F|r)照明弹
+Hotkey=F
+ 
+//农民
+[hpea]
+Hotkey=P
+Tip= (|cffffcc00P|r)生产农民
+ 
+//战斗号召（一个或者多个农民）
+[Amil]
+Tip=(|cffffcc00C|r) 战斗号召
+Untip= (|cffffcc00W|r) 回到战斗号召
+Hotkey=C
+Unhotkey=W
+ 
+//战斗号召（让城镇大厅附近的农民都集合到一起）
+[Amic]
+Tip=(|cffffcc00C|r) 战斗号召
+Untip= (|cffffcc00W|r) 回到战斗号召
+Hotkey=C
+Unhotkey=W
+ 
+//矮人火枪手
+[hrif]
+Hotkey=R
+Tip= (|cffffcc00R|r)生产矮人火枪手
+ 
+//女妖
+[hsor]
+Hotkey=S
+Tip= (|cffffcc00S|r) 训练女妖
+ 
+//减速
+[Aslo]
+Tip=(|cffffcc00w|r)减速
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=W
+Unhotkey=W
+ 
+//变形术
+[Aply]
+Tip= (|cffffcc00o|r)变形术
+Hotkey=O
+ 
+//隐形术
+[Aivs]
+Tip=(|cffffcc00I|r)隐形术
+Hotkey=I
+ 
+//魔法破坏者
+[hspt]
+Hotkey=B
+Tip= (|cffffcc00B|r)训练魔法破坏者
+ 
+//魔法盗取
+[Asps]
+Tip=(|cffffcc00t|r)魔法盗取
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=T
+Unhotkey=T
+ 
+//控制魔法
+[Acmg]
+Tip=(|cffffcc00C|r)控制魔法
+Hotkey=C
+ 
+//蒸汽机车（不带弹幕攻击）
+[hmtt]
+Hotkey=E
+Tip= (|cffffcc00E|r) 训练蒸汽机车
+ 
+//蒸汽机车（带弹幕攻击）
+[hrtt]
+Hotkey=E
+Tip=(|cffffcc00E|r) 训练蒸汽机车
+ 
+//狮鹫骑士
+[hgry]
+Hotkey=G
+Tip= (|cffffcc00G|r)训练狮鹫骑士
+ 
+/////////////////////////////
+//人族建筑物、升级和技能
+/////////////////////////////
+ 
+//魔法控制
+[Rhss]
+Tip= (|cffffcc00g|r)研究魔法控制
+Hotkey=G
+ 
+//剑术升级
+[Rhme]
+Tip= (|cffffcc00S|r)升级到铁剑术,(|cffffcc00S|r)升级到钢剑术,(|cffffcc00S|r)升级到毒剑术
+Hotkey=S,S,S
+ 
+//火药升级
+[Rhra]
+Tip= (|cffffcc00G|r)升级到黑火药,(|cffffcc00G|r)升级到精练火药,(|cffffcc00G|r)升级到终极火药
+Hotkey=G,G,G
+ 
+//护甲升级
+[Rhar]
+Tip= (|cffffcc00P|r)铁甲,(|cffffcc00P|r) 升级到钢甲, (|cffffcc00P|r) 升级到重金甲
+Hotkey=P,P,P
+ 
+//皮甲升级
+[Rhla]
+Tip= (|cffffcc00A|r)升级到镶皮甲,(|cffffcc00A|r)升级到加强型镶皮甲,(|cffffcc00A|r)升级到龙甲
+Hotkey=A,A,A
+ 
+//石工技术升级
+[Rhac]
+Tip= (|cffffcc00M|r)升级到加强型石工技术,(|cffffcc00M|r)升级到高级石工技术,(|cffffcc00M|r)升级到终极石工技术
+Hotkey=M,M,M
+ 
+//飞行机器炸弹
+[Rhgb]
+Tip= ( |cffffcc00B|r) 研究飞行机器炸弹
+Hotkey=B
+ 
+//改进伐木效率
+[Rhlh]
+Tip= (|cffffcc00L|r)改进型伐木效率,(|cffffcc00L|r)高级伐木效率
+Hotkey=L,L
+ 
+//防御升级
+[Rhde]
+Tip= (|cffffcc00D|r)研究防御
+Hotkey=D
+ 
+//动物作战训练
+[Rhan]
+Tip= (|cffffcc00A|r)研究动物作战训练
+Hotkey=A
+ 
+//牧师训练升级
+[Rhpt]
+Tip= (|cffffcc00T|r) 牧师专家训练,(|cffffcc00T|r) 牧师大师训练
+Hotkey=T,T
+ 
+//女巫训练升级
+[Rhst]
+Tip= (|cffffcc00O|r) 女巫专家训练,(|cffffcc00O|r) 女巫大师训练
+Hotkey=O,O
+ 
+//长管火枪升级
+[Rhri]
+Tip= (|cffffcc00L|r)升级到长管火枪
+Hotkey=L
+ 
+//魔法岗哨升级
+[Rhse]
+Tip= (|cffffcc00M|r)研究魔法岗哨
+Hotkey=M
+ 
+//照明弹
+[Rhfl]
+Tip= (|cffffcc00r|r) 研究照明弹
+Hotkey=R
+ 
+//风暴战锤
+[Rhhb]
+Tip= (|cffffcc00H|r)研究风暴战锤
+Hotkey=H
+ 
+//弹幕攻击
+[Rhrt]
+Tip= (|cffffcc00g|r) 研究弹幕攻击
+Hotkey=G
+ 
+//背包技能
+[Rhpm]
+Tip= (|cffffcc00B|r) 研究背包技能
+Hotkey=B
+ 
+//高射炮火
+[Rhfc]
+Tip= (|cffffcc00C|r) 研究高射炮火
+Hotkey=C
+ 
+//碎片攻击
+[Rhfs]
+Tip= (|cffffcc00S|r) 研究碎片攻击
+Hotkey=S
+ 
+//乌云
+[Rhcd]
+Tip= (|cffffcc00C|r) 研究乌云
+Hotkey=C
+ 
+//国王祭坛
+[halt]
+Hotkey=A
+Tip= (|cffffcc00A|r)建造国王祭坛
+ 
+//车间
+[harm]  
+Hotkey=W
+Tip= (|cffffcc00W|r)建造车间
+ 
+//神秘圣地
+[hars]
+Hotkey=R
+Tip= (|cffffcc00R|r)神秘圣地
+ 
+//兵营
+[hbar]
+Hotkey=B
+Tip= (|cffffcc00B|r)建造兵营
+ 
+//铁匠铺
+[hbla]
+Hotkey=S
+Tip= (|cffffcc00s|r)建造铁匠铺
+ 
+//城堡
+[hcas]
+Hotkey=U
+Tip=(|cffffcc00U|r)升级到城堡
+ 
+//农场
+[hhou]
+Hotkey=F
+Tip= (|cffffcc00F|r)建造农场
+ 
+//狮鹫笼
+[hgra]
+Hotkey=G
+Tip= (|cffffcc00G|r)建造狮鹫笼
+ 
+//炮塔
+[hctw]
+Hotkey=C
+Tip= (|cffffcc00C|r)升级到炮塔
+ 
+//防御塔
+[hgtw]
+Hotkey=G
+Tip= (|cffffcc00G|r)升级到防御塔
+ 
+//哨塔
+[hwtw]
+Hotkey=T
+Tip= (|cffffcc00T|r) 建造哨塔
+ 
+//神秘之塔
+[hatw]
+Hotkey=N
+Tip=(|cffffcc00n|r) 升级到神秘之塔
+ 
+//显示
+[AHta]
+Tip=(|cffffcc00R|r)显示
+Hotkey=R
+ 
+//神秘藏宝室
+[hvlt]
+Hotkey=V
+Tip= (|cffffcc00V|r)建造神秘藏宝室
+ 
+//伐木场
+[hlum]
+Hotkey=L
+Tip= (|cffffcc00L|r)建造伐木场
+ 
+//主城
+[hkee]  
+Hotkey=U
+Tip=(|cffffcc00U|r)升级到主城
+ 
+//城镇大厅
+[htow]
+Hotkey=H
+Tip= (|cffffcc00H|r)建造城镇大厅
+ 
+ 
+/////////////////////////////
+//人族英雄和技能
+/////////////////////////////
+ 
+//血法师
+[Hblm]
+Hotkey=B
+Tip= (|cffffcc00B|r)召唤血法师
+Revivetip= (|cffffcc00B|r)复活血法师
+Awakentip= (|cffffcc00B|r)复活血法师
+ 
+//魔法吸吮
+[AHdr]
+Tip= (|cffffcc00E|r)魔法吸吮 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)魔法吸吮 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)魔法吸吮 —— [|cffffcc00等级3|r]
+Hotkey=E
+Researchtip=“ (|cffffcc00E|r)学习吸吮魔法——[|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//烈焰风暴
+[AHfs]
+Tip=(|cffffcc00Q|r)烈焰风暴 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)烈焰风暴 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)烈焰风暴 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“(|cffffcc00Q|r)学习烈焰风暴 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//驱散
+[AHbn]
+Tip=(|cffffcc00W|r)驱散 —— [|cffffcc00等级 1|r],(|cffffcc00W|r)驱散 —— [|cffffcc00等级 2|r],(|cffffcc00W|r)驱散 —— [|cffffcc00等级 3|r]
+Hotkey=W
+Researchtip=“ (|cffffcc00W|r) 学习驱散 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//凤凰
+[AHpx]
+Tip= (|cffffcc00R|)凤凰
+Hotkey=R
+Researchtip= (|cffffcc00R|r)学习凤凰
+Researchhotkey=R
+ 
+//大魔法师
+[Hamg]
+Hotkey=A
+Tip= (|cffffcc00A|r)召唤大魔法师
+Revivetip=(|cffffcc00A|r) 复活大魔法师
+Awakentip=(|cffffcc00A|r) 复活大魔法师
+ 
+//暴风雪
+[AHbz]
+Tip=(|cffffcc00Q|r)暴风雪 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)暴风雪 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)暴风雪 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“ (|cffffcc00Q|r)学习暴风雪 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//召唤水元素
+[AHwe]
+Tip= (|cffffcc00E|r)召唤水元素 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)召唤水元素 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)召唤水元素 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(|cffffcc00E|r)召唤水元素 —— [|cffffcc00等级 %d|r]”
+Hotkey=E
+Researchhotkey=E
+ 
+//辉煌光环 
+[AHab]
+Tip=辉煌光环 —— [|cffffcc00等级 1|r],辉煌光环 —— [|cffffcc00等级 2|r],辉煌光环 —— [|cffffcc00等级 3|r]
+Researchtip=“ (|cffffcc00W|r)学习辉煌光环 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//群体传送
+[AHmt]
+Tip= (|cffffcc00R|r)群体传送
+Hotkey=R
+Researchtip= (|cffffcc00R|r) 学习群体传送
+Researchhotkey=R
+ 
+//山丘之王
+[Hmkg]
+Hotkey=M
+Tip= (|cffffcc00M|r)召唤山丘之王
+Revivetip= (|cffffcc00M|r)复活山丘之王
+Awakentip= (|cffffcc00M|r)复活山丘之王
+ 
+//风暴之锤
+[AHtb]
+Tip=风暴之锤(|cffffcc00Q|r) —— [|cffffcc00等级 1|r],风暴之锤(|cffffcc00Q|r) —— [|cffffcc00等级 2|r],风暴之锤(|cffffcc00Q|r) —— [|cffffcc00等级 3|r],风暴之锤(|cffffcc00t|r) —— [|cffffcc00等级 4|r]
+Hotkey=Q
+Researchtip=“ (|cffffcc00Q|r) 学习风暴之锤 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//雷霆一击
+[AHtc]
+Tip= (|cffffcc00E|r)雷霆一击 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)雷霆一击 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)雷霆一击 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“ (|cffffcc00E|r)学习雷霆一击 —— [|cffffcc00等级 %d|r] ”
+Researchhotkey=E
+ 
+//重击 
+[AHbh]
+Tip=重击 —— [|cffffcc00等级 1|r],重击 —— [|cffffcc00等级 2|r],重击 —— [|cffffcc00等级 3|r]
+Researchtip=“ (|cffffcc00W|r)学习重击 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//天神下凡
+[AHav]
+Tip= (|cffffcc00R|r)激活天神下凡
+Untip= (|cffffcc00R|r)取消天神下凡
+Hotkey=R
+Unhotkey=R
+Researchtip= (|cffffcc00R|r)学习天神下凡
+Researchhotkey=R
+ 
+//圣骑士
+[Hpal]
+Hotkey=L
+Tip= (|cffffcc00l|r)召唤圣骑士
+Revivetip=(|cffffcc00l|r) 复活圣骑士
+Awakentip=(|cffffcc00l|r) 复活圣骑士
+ 
+//神圣之光
+[AHhb]
+Tip= (|cffffcc00Q|r) 神圣之光 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r) 神圣之光 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r) 神圣之光 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“ (|cffffcc00Q|r) 学习神圣之光—— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//神圣护甲
+[AHds]
+Tip= (|cffffcc00E|r) 激活神圣护甲 —— [|cffffcc00等级 1|r],(|cffffcc00E|r) 激活神圣护甲  —— [|cffffcc00等级 2|r],(|cffffcc00E|r) 激活神圣护甲  —— [|cffffcc00等级 3|r]
+Untip= (|cffffcc00E|r)取消神圣护甲
+Hotkey=E
+Unhotkey=E
+Researchtip=“ (|cffffcc00E|r)学习神圣护甲—— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//专注光环
+[AHad]
+Tip=专注光环 —— [|cffffcc00等级 1|r],专注光环 —— [|cffffcc00等级 2|r],专注光环 —— [|cffffcc00等级 3|r]
+Researchtip=“ (|cffffcc00W|r)学习专注光环 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//复活
+[AHre]
+Tip=(|cffffcc00R|r)复活
+Hotkey=R
+Researchtip= (|cffffcc00R|r)学习复活
+Researchhotkey=R
+ 
+ 
+/////////////////////////////
+//兽族单位和技能
+/////////////////////////////
+ 
+//粉碎者
+[ocat]
+Hotkey=D
+Tip= (|cffffcc00D|r) 训练粉碎者
+ 
+//巨魔巫医
+[odoc]
+Hotkey=W
+Tip= (|cffffcc00W|r) 训练巨魔巫医
+ 
+//岗哨守卫
+[Aeye]
+Tip= (|cffffcc00W|r)岗哨守卫
+Hotkey=W
+ 
+//静止陷阱
+[Asta]
+Tip= (|cffffcc00T|r)静止陷阱
+Hotkey=T
+ 
+//医疗守卫
+[Ahwd]
+Tip= (|cffffcc00e|r)医疗守卫
+Hotkey=E
+ 
+//兽族步兵
+[ogru]
+Hotkey=G
+Tip= (|cffffcc00G|r) 训练兽族步兵
+ 
+//巨魔猎头者
+[ohun]
+Hotkey=T
+Tip= (|cffffcc00H|r) 训练巨魔猎头者
+ 
+//巨魔狂暴战士
+[otbk]
+Hotkey=T
+Tip= (|cffffcc00T|r)训练巨魔狂暴战士
+ 
+//狂热愤怒
+[Absk]
+Tip=“(|cffffcc00B|r)狂热愤怒”
+Hotkey=B
+ 
+//科多兽
+[okod]
+Hotkey=K
+Tip= (|cffffcc00K|r)训练科多兽
+ 
+//吞噬魔法
+[Adev]
+Tip=(|cffffcc00D|r)吞噬魔法
+Hotkey=D
+ 
+//苦工
+[opeo]
+Hotkey=P
+Tip= (|cffffcc00P|r)训练苦工
+ 
+//掠夺者
+[orai]
+Hotkey=R
+Tip= (|cffffcc00R|r) 训练掠夺者
+ 
+//诱捕
+[Aens]
+Tip=(|cffffcc00E|r)诱捕
+Hotkey=E
+ 
+//萨满祭司
+[oshm]
+Hotkey=S
+Tip=（|cffffcc00S|r）训练萨满祭司
+ 
+//净化
+[Aprg]
+Tip= (|cffffcc00g|r)净化
+Hotkey=G
+ 
+//嗜血术
+[Ablo]
+Tip=(|cffffcc00B|r)嗜血术
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=B
+Unhotkey=B
+ 
+ 
+//闪电护盾
+[Alsh]
+Tip=(|cffffcc00L|r)闪电护盾
+Hotkey=L
+ 
+//牛头人
+[otau]
+Hotkey=T
+Tip= (|cffffcc00T|r) 训练牛头人
+ 
+//巨魔蝙蝠骑士
+[otbr]
+Hotkey=B
+Tip= (|cffffcc00B|r)训练巨魔蝙蝠骑士
+ 
+//不稳定化合物
+[Auco]
+Tip=“ (|cffffcc00C|r)不稳定化合物”
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=C
+Unhotkey=C
+ 
+ 
+//风骑士
+[owyv]
+Hotkey=W
+Tip= (|cffffcc00W|r) 训练风骑士
+ 
+//灵魂行者
+[ospm]
+Hotkey=T
+Tip= (|cffffcc00t|r)训练灵魂行者
+ 
+//先祖幽灵
+[Aast]
+Tip=“ (|cffffcc00c|r)先祖幽灵”
+Hotkey=C
+ 
+//消魔
+[Adcn]
+Tip=“(|cffffcc00D|r)消魔”
+Hotkey=D
+ 
+//灵肉形态
+[Acpf]
+Tip=“ (|cffffcc00F|r)灵肉形态”
+Untip=“ (|cffffcc00F|r)虚无形态”
+Hotkey=F
+Unhotkey=F
+ 
+//虚无形态
+[Aetf]
+Tip=“ (|cffffcc00F|r)虚无形态”
+Untip=“ (|cffffcc00F|r)灵肉形态”
+Hotkey=F
+Unhotkey=F
+ 
+//灵魂锁链
+[Aspl]
+Tip=“ (|cffffcc00r|r)灵魂锁链”
+Hotkey=R
+ 
+ 
+/////////////////////////////
+//兽族建筑物、升级和技能
+/////////////////////////////
+ 
+//近战武器升级
+[Rome]
+Tip=升级到(|cffffcc00M|r)钢铁近战武器,升级到(|cffffcc00M|r)金属近战武器,升级到(|cffffcc00M|r)终极近战武器
+Hotkey=M,M,M
+ 
+//远程武器升级
+[Rora]
+Tip=升级到(|cffffcc00R|r)钢铁远程武器,升级到(|cffffcc00R|r)金属远程武器,升级到(|cffffcc00R|r)终极远程武器
+Hotkey=R,R,R
+ 
+//护甲升级
+[Roar]
+Tip=升级到(|cffffcc00A|r)钢铁护甲,升级到(|cffffcc00A|r)钢铁护甲,升级到(|cffffcc00A|r)终极护甲
+Hotkey=A,A,A
+ 
+//战鼓
+[Rwdm]
+Tip= (|cffffcc00D|r) 升级战鼓
+Hotkey=D
+ 
+//掠夺
+[Ropg]
+Tip= (|cffffcc00G|r)掠夺
+Hotkey=G
+ 
+//狂暴力量
+[Robs]
+Tip= (|cffffcc00B|r) 研究狂暴力量
+Hotkey=B
+ 
+//粉碎
+[Rows]
+Tip= (|cffffcc00P|r) 研究粉碎
+Hotkey=P
+ 
+//诱捕
+[Roen]
+Tip= (|cffffcc00n|r) 研究诱捕
+Hotkey=N
+ 
+//浸毒武器
+[Rovs]
+Tip= (|cffffcc00E|r) 研究浸毒武器
+Hotkey=E
+ 
+//巫医训练升级
+[Rowd]
+Tip= (|cffffcc00D|r)巫医专家训练,(|cffffcc00D|r)巫医大师训练
+Hotkey=D,D
+ 
+//萨满祭司训练升级
+[Rost]
+Tip= (|cffffcc00M|r) 萨满祭司专家训练,(|cffffcc00M|r) 萨满祭司大师训练
+Hotkey=M,M
+ 
+//尖刺障碍升级
+[Rosp]
+Tip=升级到(|cffffcc00S|r)尖刺障碍,升级到(|cffffcc00S|r)中级尖刺障碍,升级到(|cffffcc00S|r)高级尖刺障碍
+Hotkey=S,S,S
+ 
+//巨魔再生升级
+[Rotr]
+Tip=研究(|cffffcc00T|r)巨魔再生,研究(|cffffcc00T|r)中级巨魔再生,研究(|cffffcc00T|r)高级巨魔再生
+Hotkey=R
+ 
+//液体炸弹升级
+[Rolf]
+Tip= (|cffffcc00L|r)研究液体炸弹
+Hotkey=L
+ 
+//背包技能
+[Ropm]
+Tip= (|cffffcc00B|r) 研究背包技能
+Hotkey=B
+ 
+//灵魂行者训练升级
+[Rowt]
+Tip= (|cffffcc00r|r)灵魂行者专家训练,(|cffffcc00r|r)灵魂行者大师训练
+Hotkey=R,R
+ 
+//狂暴愤怒升级
+[Robk]
+Tip= (|cffffcc00e|r)狂暴愤怒升级
+Hotkey=E
+ 
+//加强型防御
+[Rorb]
+Tip= (|cffffcc00D|r)加强型防御
+Hotkey=D
+ 
+//燃烧之油
+[Robf]
+Tip= (|cffffcc00n|r)燃烧之油
+Hotkey=N
+ 
+//风暴祭坛
+[oalt]
+Hotkey=A
+Tip= (|cffffcc00A|r) 建造风暴祭坛
+ 
+//兵营
+[obar]
+Hotkey=B
+Tip= (|cffffcc00B|r) 建造兵营
+ 
+//兽栏
+[obea]
+Hotkey=E
+Tip= (|cffffcc00E|r) 建造兽栏
+ 
+//战争磨坊
+[ofor]
+Hotkey=M
+Tip= (|cffffcc00M|r) 建造战争磨坊
+ 
+//堡垒
+[ofrt]
+Hotkey=U
+Tip=(|cffffcc00U|r)升级到堡垒
+ 
+//大厅
+[ogre]
+Hotkey=H
+Tip= (|cffffcc00H|r) 建造大厅
+ 
+//灵魂归宿
+[osld]
+Hotkey=S
+Tip= (|cffffcc00S|r) 建造灵魂归宿
+ 
+//要塞
+[ostr]
+Hotkey=U
+Tip=(|cffffcc00U|r)升级到要塞
+ 
+//兽族地洞
+[otrb]
+Hotkey=O
+Tip= (|cffffcc00O|r) 建造兽族地洞
+ 
+//战备状态
+[Abtl]
+Tip=(|cffffcc00B|r)战备状态
+Hotkey=B
+ 
+//卸载苦工
+[Astd]
+Tip= (|cffffcc00D|r)卸载苦工
+Hotkey=D
+ 
+//加强型地洞
+[orbr]
+Hotkey=O
+Tip=建造(|cffffcc00O|r)加强型地洞
+ 
+//牛头人图腾
+[otto]
+Hotkey=T
+Tip=建造(|cffffcc00T|r)牛头人图腾
+ 
+//巫毒商店
+[ovln]
+Hotkey=V
+Tip=建造(|cffffcc00V|r)巫毒商店
+ 
+//了望塔
+[owtw]
+Hotkey=W
+Tip=建造(|cffffcc00W|r)了望塔
+ 
+ 
+/////////////////////////////
+//兽族英雄和技能
+/////////////////////////////
+ 
+[Obla]
+Hotkey=B
+Tip=召唤(|cffffcc00B|r)剑圣
+Revivetip=复活(|cffffcc00F|r)先知
+Awakentip=复活(|cffffcc00F|r)先知
+ 
+//疾步风
+[AOwk]
+Tip=(|cffffcc00Q|r)疾步风 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)疾步风 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)疾步风 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)疾步风 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//致命一击 
+[AOcr]
+Tip=致命一击 —— [|cffffcc00等级 1|r],致命一击 —— [|cffffcc00等级 2|r],致命一击 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(|cffffcc00C|r)致命一击 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=C
+ 
+//镜像
+[AOmi]
+Tip= (|cffffcc00R|r)镜像 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)镜像 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)镜像 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)镜像 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//剑刃风暴
+[AOww]
+Tip=(|cffffcc00R|r)剑刃风暴
+Hotkey=R
+Researchtip=学习(|cffffcc00R|r)剑刃风暴
+Researchhotkey=R
+ 
+[Ofar]
+Hotkey=F
+Tip=召唤(|cffffcc00F|r)先知
+Revivetip=复活(|cffffcc00F|r)先知
+Awakentip=复活(|cffffcc00F|r)先知
+ 
+//闪电链
+[AOcl]
+Tip=(|cffffcc00Q|r)闪电链 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)闪电链 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)闪电链 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)闪电链 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//透视
+[AOfs]
+Tip=(|cffffcc00W|r)透视 —— [|cffffcc00等级 1|r],(|cffffcc00W|r)透视 —— [|cffffcc00等级 2|r],(|cffffcc00W|r)透视 —— |cffffcc00等级 3|r]
+Hotkey=W
+Researchtip=“学习(|cffffcc00W|r)透视 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//野兽幽魂
+[AOsf]
+Tip= (|cffffcc00E|r)野兽幽魂 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)野兽幽魂 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)野兽幽魂 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(|cffffcc00E|r)野兽幽魂 —— [|cffffcc00等级 %d|r].”
+Hotkey=E
+Researchhotkey=E
+ 
+//地震
+[AOeq]
+Tip=(|cffffcc00R|r)地震
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)地震”
+Researchhotkey=R
+ 
+[Oshd]
+Hotkey=H
+Tip= (|cffffcc00H|r)召唤暗影猎手
+Revivetip= (|cffffcc00H|r)复活暗影猎手
+Awakentip= (|cffffcc00H|r)复活暗影猎手
+ 
+//医疗波
+[AOhw]
+Tip=医疗波(|cffffcc00Q|r) —— [|cffffcc00等级 1|r],医疗波(|cffffcc00Q|r) —— [|cffffcc00等级 2|r],医疗波(|cffffcc00Q|r) —— [|cffffcc00等级 3|r],医疗波(|cffffcc00e|r) —— [|cffffcc00等级 4|r]
+Hotkey=Q
+Researchtip=“ (|cffffcc00Q|r) 学习医疗波—— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//毒蛇守卫
+[AOsw]
+Tip= (|cffffcc00E|r)毒蛇守卫 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)毒蛇守卫 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)毒蛇守卫 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)毒蛇守卫 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//妖术 
+[AOhx]
+Tip= (|cffffcc00W|r)妖术 —— [|cffffcc00等级 1|r],(|cffffcc00W|r)妖术 —— [|cffffcc00等级 2|r],(|cffffcc00W|r)妖术 —— [|cffffcc00等级 3|r]
+Hotkey=W
+Researchtip=“学习妖术(|cffffcc00W|r) —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//巫毒
+[AOvd]
+Tip= (|cffffcc00R|r)巫毒
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)巫毒”
+Researchhotkey=R
+ 
+[Otch]
+Hotkey=T
+Tip=召唤(|cffffcc00T|r)牛头人酋长
+Revivetip=复活(|cffffcc00T|r)牛头人酋长
+Awakentip=复活(|cffffcc00T|r)牛头人酋长
+ 
+ 
+//震荡波
+[AOsh]
+Tip=震荡波(|cffffcc00Q|r) —— [|cffffcc00等级 1|r],震荡波(|cffffcc00Q|r) —— [|cffffcc00等级 2|r],震荡波(|cffffcc00Q|r) —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习震荡波(|cffffcc00Q|r) —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//耐久光环
+[AOae]
+Tip=耐久光环 —— [|cffffcc00等级 1|r],耐久光环 —— [|cffffcc00等级 2|r],耐久光环 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(|cffffcc00W|r)耐久光环 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//战争践踏
+[AOws]
+Tip= (|cffffcc00E|r)战争践踏 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)战争践踏 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)战争践踏 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(|cffffcc00E|r)战争践踏 —— [|cffffcc00等级 %d|r]。”
+Hotkey=E
+Researchhotkey=E
+ 
+//重生
+[AOre]
+Tip=重生
+Researchtip=学习(|cffffcc00R|r)重生
+Researchhotkey=R
+ 
+ 
+/////////////////////////////
+//暗夜精灵单位和技能
+/////////////////////////////
+ 
+//隐藏
+[Ashm]
+Tip= (|cffffcc00i|r)隐藏
+Hotkey=I
+ 
+//投刃车
+[ebal]
+Hotkey=T
+Tip= (|cffffcc00T|r) 训练投刃车
+ 
+//奇美拉
+[echm]
+Hotkey=C
+Tip=训练(|cffffcc00C|r) 奇美拉
+ 
+//利爪德鲁伊
+[edoc]
+Hotkey=C
+Tip= (|cffffcc00C|r)训练利爪德鲁伊
+ 
+//战嚎
+[Aroa]
+Tip=(|cffffcc00R|r)战嚎
+Hotkey=R
+ 
+//生命恢复
+[Arej]
+Tip= (|cffffcc00e|r)生命恢复
+Hotkey=E
+ 
+//变熊
+[Abrf]
+Tip= ( |cffffcc00F|r)变熊
+Hotkey=F
+Untip= (|cffffcc00F|r)恢复暗夜精灵状态
+Unhotkey=F
+ 
+//咆哮
+[Ara2]
+Tip=(|cffffcc00R|)咆哮
+Hotkey=R
+ 
+//猛禽德鲁伊
+[edot]
+Hotkey=T
+Tip= (|cffffcc00T|r)训练猛禽德鲁伊
+ 
+//精灵之火
+[Afae]
+Tip= (|cffffcc00r|r)精灵之火
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=R
+Unhotkey=R
+ 
+//飓风
+[Acyc]
+Tip=(|cffffcc00C|r)飓风
+Hotkey=C
+ 
+//风暴之鸦状态
+[Arav]
+Tip= (|cffffcc00F|r) 风暴之鸦状态
+Hotkey=F
+Untip= (|cffffcc00F|r)暗夜精灵族形态
+Unhotkey=F
+ 
+//精灵之火
+[Afa2]
+Tip= (|cffffcc00r|r)精灵之火
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=R
+Unhotkey=R
+ 
+//小精灵
+[ewsp]
+Hotkey=W
+Tip=训练(|cffffcc00W|r)小精灵
+ 
+//更新
+[Aren]
+Tip=(|cffffcc00R|r)更新
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=R
+Unhotkey=R
+ 
+//采集
+[Awha]
+Tip=(|cffffcc00G|r)采集
+Hotkey=G
+ 
+//爆炸
+[Adtn]
+Tip=(|cffffcc00D|r)爆炸
+Hotkey=D
+ 
+//女猎手
+[esen]
+Hotkey=H
+Tip=训练(|cffffcc00H|r)女猎手
+ 
+//哨兵
+[Aesn]
+Tip= (|cffffcc00e|r)哨兵
+Hotkey=E
+ 
+//弓箭手
+[earc]
+Hotkey=A
+Tip=训练弓箭手(|cffffcc00A|r) 
+ 
+//骑乘角鹰兽
+[Aco2]
+Tip= (|cffffcc00U|r) 骑乘角鹰兽
+Hotkey=U
+ 
+//卸载弓箭手和 & 角鹰兽
+[Adec]
+Tip= (|cffffcc00u|r)卸载弓箭手和 & 角鹰兽
+Hotkey=U
+ 
+//树妖
+[edry]
+Hotkey=D
+Tip=训练(|cffffcc00D|r)树妖
+ 
+//驱逐魔法
+[Aadm]
+Tip= (|cffffcc00b|r)驱逐魔法
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=B
+Unhotkey=B
+ 
+//角鹰兽
+[ehip]
+Hotkey=H
+Tip=训练(|cffffcc00H|r)角鹰兽
+ 
+//搭载弓箭手
+[Aco3]
+Tip= (|cffffcc00U|r)搭载弓箭手
+Hotkey=U
+ 
+//山岭巨人
+[emtg]
+Hotkey=G
+Tip= (|cffffcc00G|r)训练山岭巨人
+ 
+//拔树
+[Agra]
+Tip=(|cffffcc00W|r)拔树
+Hotkey=W
+ 
+//嘲讽
+[Atau]
+Tip=(|cffffcc00T|r)嘲讽
+Hotkey=T
+ 
+//精灵龙
+[efdr]
+Hotkey=F
+Tip= (|cffffcc00F|r)训练精灵龙
+ 
+//魔力之焰
+[Amfl]
+Tip= (|cffffcc00F|r)魔力之焰
+Untip=停止(|cffffcc00F|r)魔力之焰
+Hotkey=F
+Unhotkey=F
+ 
+//变相移动
+[Apsh]
+Tip= (|cffffcc00e|r)变相移动
+Untip=“|cffc3dbff|cffc3dbff点击右键以启动自动施放功能。|r|r”
+Hotkey=E
+Unhotkey=E
+ 
+ 
+////////////////////////////
+//暗夜精灵建筑、升级和技能
+////////////////////////////
+ 
+//月之力量升级
+[Resm]
+Tip=升级到(|cffffcc00M|r)月之力量,升级到(|cffffcc00M|r)中级月之力量,升级到( |cffffcc00M|r)高级月之力量
+Hotkey=M,M,M
+ 
+//野性力量升级
+[Resw]
+Tip=升级到(|cffffcc00W|r)野性力量,升级到(|cffffcc00W|r)中级野性力量,升级到(|cffffcc00W|r)高级野性力量
+Hotkey=W,W,W
+ 
+//月之护甲升级
+[Rema]
+Tip=升级到(|cffffcc00A|r)月之护甲,升级到(|cffffcc00A|r)中级月之护甲,升级到 (|cffffcc00A|r)高级月之护甲
+Hotkey=A,A,A
+ 
+//加强隐藏升级
+[Rerh]
+Tip=升级到(|cffffcc00R|r)加强隐藏,升级到(|cffffcc00R|r)中级加强隐藏,升级到(|cffffcc00R|r)高级加强隐藏
+Hotkey=R,R,R
+ 
+//夜视能力
+[Reuv]
+Tip=升级到(|cffffcc00U|r)夜视能力
+Hotkey=U
+ 
+//自然的祝福
+[Renb]
+Tip=研究(|cffffcc00N|r)自然的祝福
+Hotkey=N
+ 
+//硬弓
+[Reib]
+Tip=研究(|cffffcc00I|r)硬弓
+Hotkey=I
+ 
+//射击术
+[Remk]
+Tip=研究(|cffffcc00M|r)射击术
+Hotkey=M
+ 
+//哨兵
+[Resc]
+Tip=研究(|cffffcc00S|r)哨兵
+Hotkey=S
+ 
+//月刃
+[Remg]
+Tip=升级(|cffffcc00G|r)月刃
+Hotkey=G
+ 
+//猛禽德鲁伊训练升级
+[Redt]
+Tip= ( |cffffcc00A|r) 猛禽德鲁伊专家训练,(|cffffcc00A|r) 猛禽德鲁伊大师训练
+Hotkey=A,A
+ 
+//利爪德鲁伊训练升级
+[Redc]
+Tip= (|cffffcc00L|r) 利爪德鲁伊专家训练,(|cffffcc00L|r) 利爪德鲁伊大师训练
+Hotkey=L,L
+ 
+//驱散魔法
+[Resi]
+Tip=研究(|cffffcc00S|r)驱散魔法
+Hotkey=S
+ 
+//驯服角鹰兽
+[Reht]
+Tip=研究(|cffffcc00I|r)驯服角鹰兽
+Hotkey=I
+ 
+//腐蚀喷吐
+[Recb]
+Tip=研究(|cffffcc00B|r)腐蚀喷吐
+Hotkey=B
+ 
+//穿刺剑刃
+[Repb]
+Tip= (|cffffcc00P|r) 研究穿刺剑刃
+Hotkey=P
+ 
+//抗性皮肤
+[Rers]
+Tip= (|cffffcc00t|r)研究抗性皮肤
+Hotkey=T
+ 
+//硬化皮肤
+[Rehs]
+Tip= ( |cffffcc00H|r)研究硬化皮肤
+Hotkey=H
+ 
+//利爪之痕
+[Reeb]
+Tip= (|cffffcc00M|r)研究利爪之痕
+Hotkey=M
+ 
+//猛禽之痕
+[Reec]
+Tip= (|cffffcc00M|r)研究猛禽之痕
+Hotkey=M
+ 
+//月井之春
+[Rews]
+Tip= (|cffffcc00e|r)研究月井之春
+Hotkey=E
+ 
+//背包技能
+[Repm]
+Tip=研究(|cffffcc00B|r)背包技能
+Hotkey=B
+ 
+//吞食树木
+[Aeat]
+Tip=(|cffffcc00E|r)吞食树木
+Hotkey=E
+ 
+//起立
+[Aroo]
+Tip=(|cffffcc00R|r)起立
+Hotkey=R
+Untip= (|cffffcc00R|r)起立
+Unhotkey=R
+ 
+//远古保护者
+[etrp]
+Hotkey=P
+Tip=建造(|cffffcc00P|r)远古保护者
+ 
+//生命之树
+[etol]
+Hotkey=T
+Tip=建造(|cffffcc00T|r)生命之树
+ 
+//缠绕金矿
+[Aent]
+Tip= ( |cffffcc00G|r)缠绕金矿
+Hotkey=G
+ 
+//缠绕金矿（装载/卸载）
+[Aenc]
+Tip=(|cffffcc00L|r)装载
+Hotkey=L
+Untip=(|cffffcc00U|r)卸载全部
+Unhotkey=U
+ 
+//装载小精灵
+[Slo2]
+Tip=(|cffffcc00L|r)装载小精灵
+Hotkey=L
+ 
+// 卸载全部
+[Adri]
+Tip=(|cffffcc00U|r)卸载全部
+Hotkey=U
+ 
+ 
+ 
+//升级到远古之树
+[etoa]
+Hotkey=U
+Tip=(|cffffcc00U|r)升级到远古之树
+ 
+//升级到永恒之树
+[etoe]
+Hotkey=U
+Tip=(|cffffcc00U|r)升级到永恒之树
+ 
+//猎手大厅
+[edob]
+Hotkey=H
+Tip=建造(|cffffcc00H|r)猎手大厅
+ 
+//长者祭坛
+[eate]
+Hotkey=A
+Tip=建造(|cffffcc00A|r) 长者祭坛
+ 
+//知识古树
+[eaoe]
+Hotkey=L
+Tip=建造(|cffffcc00L|r)知识古树
+ 
+//战争古树
+[eaom]
+Hotkey=R
+Tip=建造(|cffffcc00R|r)战争古树
+ 
+//风之古树
+[eaow]
+Hotkey=W
+Tip=建造(|cffffcc00W|r)风之古树
+ 
+//奇迹古树
+[eden]
+Hotkey=D
+Tip= (|cffffcc00d|r)建造奇迹古树
+ 
+//奇美拉栖木
+[edos]
+Hotkey=C
+Tip=建造(|cffffcc00C|r) 奇美拉栖木
+ 
+//月亮井
+[emow]
+Hotkey=M
+Tip=建造(|cffffcc00M|r)月亮井
+ 
+//补充魔法和生命值
+[Ambt]
+Tip=(|cffffcc00R|r) 补充魔法和生命值
+Untip=“|cffc3dbff|cffc3dbff点击右键以启动自动施放功能。|r|r”
+Hotkey=R
+Unhotkey=R
+ 
+//////////////////////////////
+//暗夜精灵英雄和技能
+//////////////////////////////
+ 
+//恶魔猎手
+[Edem]
+Hotkey=D
+Tip= (|cffffcc00D|r)召唤恶魔猎手
+Revivetip=复活(|cffffcc00D|r)恶魔猎手
+Awakentip=复活(|cffffcc00D|r)恶魔猎手
+ 
+//法力燃烧
+[AEmb]
+Tip= (|cffffcc00Q|r)法力燃烧 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)法力燃烧 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)法力燃烧 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)法力燃烧 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//献祭 
+[AEim]
+Tip= (|cffffcc00E|r)激活献祭 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)激活献祭 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)激活献祭 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Untip= (|cffffcc00E|r)取消献祭
+Unhotkey=E
+Researchtip=“学习(|cffffcc00E|r)献祭 —— [|cffffcc00等级 %d|r] ”
+Researchhotkey=E
+ 
+//闪避
+[AEev]
+Tip=闪避 —— [|cffffcc00等级 1|r],闪避 —— [|cffffcc00等级 2|r],闪避 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(|cffffcc00E|r)闪避 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//变身
+[AEme]
+Tip= (|cffffcc00R|r)变身
+Hotkey=R
+Researchtip=学习(|cffffcc00R|r)变身
+Researchhotkey=R
+ 
+//丛林守护者
+[Ekee]
+Hotkey=K
+Tip=召唤(|cffffcc00K|r)丛林守护者
+Revivetip=复活(|cffffcc00K|r)丛林守护者
+Awakentip=复活(|cffffcc00K|r)丛林守护者
+ 
+//纠缠根须
+[AEer]
+Tip=(|cffffcc00Q|r)纠缠根须 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)纠缠根须 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)纠缠根须 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)纠缠根须 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//自然之力 
+[AEfn]
+Tip=(|cffffcc00E|r)自然之力 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)自然之力 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)自然之力 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)自然之力 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//荆棘光环
+[AEah]
+Tip=荆棘光环 —— [|cffffcc00等级 1|r],荆棘光环 —— [|cffffcc00等级 2|r],荆棘光环 —— [|cffffcc00等级 3|r]
+Researchtip=“ (|cffffcc00W|r)学习荆棘光环 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//宁静
+[AEtq]
+Tip=(|cffffcc00R|r)宁静
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)宁静”
+Researchhotkey=R
+ 
+//月之女祭司
+[Emoo]
+Hotkey=P
+Tip=召唤(|cffffcc00P|r)月之女祭司
+Revivetip=复活(|cffffcc00P|r)月之女祭司
+Awakentip=复活(|cffffcc00P|r)月之女祭司
+ 
+//侦察
+[AEst]
+Tip= (|cffffcc00Q|r)侦察 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)侦察 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)侦察 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)侦察 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//灼热之箭 
+[AHfa]
+Tip= (|cffffcc00E|r)灼热之箭 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)灼热之箭 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)灼热之箭 —— [|cffffcc00等级 3|r]
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=E
+Unhotkey=E
+Researchtip=“学习(|cffffcc00E|r)灼热之箭 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//强击光环
+[AEar]
+Tip=强击光环 —— [|cffffcc00等级 1|r],强击光环 —— [|cffffcc00等级 2|r],强击光环 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(|cffffcc00W|r)强击光环 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//群星坠落
+[AEsf]
+Tip= (|cffffcc00R|r)群星坠落
+Hotkey=R
+Researchtip=学习(|cffffcc00R|r)群星坠落
+Researchhotkey=R
+ 
+//守望者
+[Ewar]
+Hotkey=W
+Tip=召唤(|cffffcc00W|r)守望者
+Revivetip=复活(|cffffcc00W|r)守望者
+Awakentip=复活(|cffffcc00W|r)守望者
+ 
+//闪烁
+[AEbl]
+Tip=(|cffffcc00B|r)闪烁 —— [|cffffcc00等级 1|r],(|cffffcc00W|r)闪烁 —— [|cffffcc00等级 2|r],(|cffffcc00W|r)闪烁 —— [|cffffcc00等级 3|r]
+Hotkey=W
+Researchtip=“学习(|cffffcc00W|r)闪烁 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//刀阵旋风
+[AEfk]
+Tip=(|cffffcc00Q|r)刀阵旋风 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)刀阵旋风 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)刀阵旋风 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)刀阵旋风 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//暗影突袭
+[AEsh]
+Tip= (|cffffcc00E|r)暗影突袭 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)暗影突袭 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)暗影突袭 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)暗影突袭 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+ 
+//复仇之魂
+[AEsv]
+Tip=(|cffffcc00R|r)复仇之魂
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)复仇之魂”
+Researchhotkey=R
+ 
+ 
+// 复仇之魂
+[Avng]
+Tip= (|cffffcc00V|r)复仇之魂
+Hotkey=V
+Untip=“|cffc3dbff右键激活自动施放。|r”
+ 
+ 
+/////////////////////////////
+//不死族单位和技能
+/////////////////////////////
+ 
+//侍僧
+[uaco]
+Tip=训练(|cffffcc00C|r)侍僧
+Hotkey=C
+ 
+//反召唤建筑物
+[Auns]
+Tip=(|cffffcc00U|r)反召唤建筑物
+Hotkey=U
+ 
+// 采集
+[Aaha]
+Tip=(|cffffcc00G|r)采集
+Untip=(|cffffcc00R|r)返送资源
+Hotkey=G
+Unhotkey=R
+ 
+//恢复
+[Arst]
+Tip=(|cffffcc00R|r)恢复
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=R
+Unhotkey=R
+ 
+//憎恶
+[uabo]
+Tip=训练(|cffffcc00A|r)憎恶
+Hotkey=A
+ 
+//吞食尸体
+[Acn2]
+Tip=(|cffffcc00C|r)吞食尸体
+Hotkey=C
+ 
+//女妖
+[uban]
+Tip=训练(|cffffcc00B|r)女妖
+Hotkey=B
+ 
+//诅咒
+[Acrs]
+Tip=(|cffffcc00C|r) 诅咒
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=C
+Unhotkey=C
+ 
+//反魔法外壳
+[Aams]
+Tip= (|cffffcc00N|r)反魔法外壳
+Hotkey=N
+ 
+//反魔法外壳
+[Aam2]
+Tip= (|cffffcc00N|r)反魔法外壳
+Hotkey=N
+ 
+//占据
+[Apos]
+Tip= (|cffffcc00O|r)占据
+Hotkey=O
+ 
+//占据
+[Aps2]
+Tip= (|cffffcc00O|r)占据
+Hotkey=O
+ 
+//穴居恶魔
+[ucry]
+Tip=训练(|cffffcc00F|r) 穴居恶魔
+Hotkey=F
+ 
+//蛛网
+[Aweb]
+Tip=(|cffffcc00W|r)蛛网
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=W
+Unhotkey=W
+ 
+//钻地
+[Abur]
+Tip=(|cffffcc00B|r)钻地
+Untip= (|cffffcc00B|r)出地
+Hotkey=B
+Unhotkey=B
+ 
+//冰霜巨龙
+[ufro]
+Tip=训练(|cffffcc00F|r)冰霜巨龙
+Hotkey=F
+ 
+//石像鬼
+[ugar]
+Tip=训练(|cffffcc00A|r)石像鬼
+Hotkey=A
+ 
+//石像形态
+[Astn]
+Tip= (|cffffcc00F|r)石像形态
+Hotkey=F
+Untip= (|cffffcc00F|r)石像鬼状态
+Unhotkey=F
+ 
+//食尸鬼
+[ugho]
+Tip=训练(|cffffcc00G|r)食尸鬼
+Hotkey=G
+ 
+// 吞食尸体
+[Acan]
+Tip=研究(|cffffcc00C|r)吞食尸体
+Hotkey=C
+ 
+//亡灵巫师
+[unec]
+Tip=训练(|cffffcc00N|r)亡灵巫师
+Hotkey=N
+ 
+//复活死尸
+[Arai]
+Tip=(|cffffcc00R|)复活死尸
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=R
+Unhotkey=R
+ 
+//邪恶狂热
+[Auhf]
+Tip=(|cffffcc00U|r)邪恶狂热
+Hotkey=U
+ 
+//残废
+[Acri]
+Tip=(|cffffcc00C|r)残废
+Hotkey=C
+ 
+//绞肉车
+[umtw]
+Tip=训练(|cffffcc00M|r)绞肉车
+Hotkey=M
+ 
+//得到尸体
+[Amel]
+Tip= (|cffffcc00C|r)得到尸体
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=C
+Unhotkey=C
+ 
+//卸载尸体
+[Amed]
+Tip=(|cffffcc00D|r)卸载尸体
+Hotkey=D
+ 
+//十胜石雕像
+[uobs]
+Tip=建造(|cffffcc00O|r)十胜石雕像
+Hotkey=O
+ 
+//灵魂触摸
+[Arpm]
+Tip= (|cffffcc00c|r)灵魂触摸
+Untip=“|cffc3dbff|cffc3dbff点击右键以启动自动施放功能。|r|r”
+Hotkey=C
+Unhotkey=C
+ 
+//枯萎精髓
+[Arpl]
+Tip= (|cffffcc00B|r)枯萎精髓
+Untip=“|cffc3dbff|cffc3dbff点击右键以启动自动施放功能。|r|r”
+Hotkey=B
+Unhotkey=B
+ 
+//变形为破坏者
+[ubsp]
+Tip= (|cffffcc00x|r)变形为破坏者
+Hotkey=T
+ 
+//毁灭之球
+[Afak]
+Tip=“(|cffffcc00O|r)毁灭之球”
+Untip=“|cffc3dbff|cffc3dbff点击右键以启动自动施放功能。|r|r”
+Hotkey=O
+Unhotkey=O
+ 
+//吞噬魔法
+[Advm]
+Tip=“(|cffffcc00D|r)吞噬魔法”
+Hotkey=D
+ 
+ 
+//吸收魔法
+[Aabs]
+Tip=“ (|cffffcc00b|r)吸收魔法”
+Hotkey=B
+ 
+ 
+/////////////////////////////
+//不死族建筑物、升级和技能
+/////////////////////////////
+ 
+//研究破坏者形态
+[Rusp]
+Tip= (|cffffcc00x|t)研究破坏者形态
+Hotkey=T
+ 
+//邪恶力量升级
+[Rume]
+Tip=升级到 (|cffffcc00S|r)邪恶力量,升级到(|cffffcc00S|r)中级邪恶力量,升级到 (|cffffcc00S|r)高级邪恶力量
+Hotkey=S,S,S
+ 
+//生物攻击升级
+[Rura]
+Tip=升级到(|cffffcc00A|r)生物攻击,升级到(|cffffcc00A|r)中级生物攻击,升级到 (|cffffcc00A|r)高级生物攻击
+Hotkey=A,A,A
+ 
+//邪恶装甲升级
+[Ruar]
+Tip=升级到(|cffffcc00U|r)邪恶装甲,升级到(|cffffcc00U|r)中级邪恶装甲,升级到 (|cffffcc00U|r)高级邪恶装甲
+Hotkey=U,U,U
+ 
+//生物甲壳升级
+[Rucr]
+Tip=升级到(|cffffcc00C|r)生物甲壳,升级到(|cffffcc00C|r)中级生物甲壳,升级到(|cffffcc00C|r)生物甲壳
+Hotkey=C,C,C
+ 
+//吞食尸体
+[Ruac]
+Tip=研究(|cffffcc00C|r)吞食尸体
+Hotkey=C
+ 
+//食尸鬼狂热
+[Rugf]
+Tip=研究(|cffffcc00Z|r)食尸鬼狂热
+Hotkey=Z
+ 
+//蛛网
+[Ruwb]
+Tip=研究(|cffffcc00W|r)蛛网
+Hotkey=W
+ 
+//石像形态
+[Rusf]
+Tip= (|cffffcc00S|r)研究石像形态
+Hotkey=S
+ 
+//亡灵巫师训练升级
+[Rune]
+Tip= (|cffffcc00E|r)亡灵巫师专家训练,(|cffffcc00E|r)亡灵巫师大师训练
+Hotkey=E,E
+ 
+//女妖训练升级
+[Ruba]
+Tip= (|cffffcc00A|)女妖专家训练,(|cffffcc00A|r)女妖大师训练
+Hotkey=A,A
+ 
+//冰冻喷吐
+[Rufb]
+Tip=研究(|cffffcc00B|r)冰冻喷吐
+Hotkey=B
+ 
+//骨质增强术
+[Rusl]
+Tip=研究(|cffffcc00S|r)骨质增强术
+Hotkey=S
+ 
+//疾病云雾
+[Rupc]
+Tip=研究(|cffffcc00D|r)疾病云雾
+Hotkey=D
+ 
+//骷髅法术
+[Rusm]
+Tip= (|cffffcc00M|r)研究骷髅法术
+Hotkey=M
+ 
+//钻地
+[Rubu]
+Tip=研究(|cffffcc00B|r)钻地
+Hotkey=B
+ 
+//挖掘尸体
+[Ruex]
+Tip= (|cffffcc00E|r)挖掘尸体
+Hotkey=E
+ 
+//背包技能
+[Rupm]
+EditorSuffix= (Undead)
+Tip=研究(|cffffcc00B|r)背包技能
+Hotkey=B
+ 
+//埋骨地
+[ubon]
+Tip=召唤(|cffffcc00B|r)埋骨地
+Hotkey=B
+ 
+//牺牲深渊
+[usap]
+Tip=召唤(|cffffcc00S|r)牺牲深渊
+Hotkey=S
+ 
+//牺牲
+[Alam]
+Tip= (|cffffcc00C|r)牺牲
+Hotkey=C
+ 
+//屠宰场
+[uslh]
+Tip=召唤(|cffffcc00H|r)屠宰场
+Hotkey=H
+ 
+//坟场
+[ugrv]
+Tip=召唤(|cffffcc00V|r)坟场
+Hotkey=V
+ 
+//黑暗祭坛
+[uaod]
+Tip=召唤(|cffffcc00A|r)黑暗祭坛
+Hotkey=A
+ 
+//大墓地
+[unpl]
+Tip=召唤(|cffffcc00N|r)大墓地
+Hotkey=N
+ 
+//亡者大厅
+[unp1]
+Tip=(|cffffcc00U|r)升级到亡者大厅
+Hotkey=U
+ 
+//黑色城堡
+[unp2]
+Tip=(|cffffcc00U|r)黑色城堡
+Hotkey=U
+ 
+//地穴
+[usep]
+Tip=召唤(|cffffcc00C|r)地穴
+Hotkey=C
+ 
+//诅咒神庙
+[utod]
+Tip=召唤(|cffffcc00T|r)诅咒神庙
+Hotkey=T
+ 
+//古墓废墟
+[utom]
+Hotkey=R
+Tip=召唤(|cffffcc00R|r)古墓废墟
+ 
+//闹鬼金矿
+[ugol]
+Tip= (|cffffcc00G|r)闹鬼金矿
+Hotkey=G
+ 
+//通灵塔
+[uzig]
+Tip=召唤(|cffffcc00Z|r)通灵塔
+Hotkey=Z
+ 
+//幽魂之塔
+[uzg1]
+Tip=升级到(|cffffcc00T|r) 幽魂之塔
+Hotkey=T
+ 
+//蛛网怪塔
+[uzg2]
+Tip=升级(|cffffcc00N|r)蛛网怪塔
+Hotkey=N
+ 
+/////////////////////////////
+//不死族英雄和技能
+/////////////////////////////
+ 
+//地穴领主
+[Ucrl]
+Tip=召唤(|cffffcc00C|r)地穴领主
+Hotkey=C
+Revivetip=复活(|cffffcc00C|r)地穴首领
+Awakentip=复活(|cffffcc00C|r)地穴首领
+ 
+//穿刺
+[AUim]
+Tip= (|cffffcc00Q|r)穿刺 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)穿刺 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)穿刺 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)穿刺 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//尖刺外壳
+[AUts]
+Tip=尖刺外壳 —— [|cffffcc00等级 1|r],尖刺外壳 —— [|cffffcc00等级 2|r],尖刺外壳 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(|cffffcc00S|r)尖刺外壳 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=S
+ 
+//腐尸甲虫
+[AUcb]
+Tip=(|cffffcc00E|r)腐尸甲虫 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)腐尸甲虫 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)腐尸甲虫 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)腐尸甲虫 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+Untip=“|cffc3dbff右键激活自动施放。|r”
+ 
+//钻地（等级2）
+[Abu2]
+Tip=(|cffffcc00B|r)钻地
+Untip=(|cffffcc00B|r)出地
+Hotkey=B
+Unhotkey=B
+ 
+//钻地（等级3）
+[Abu3]
+Tip=(|cffffcc00B|r)钻地
+Untip=(|cffffcc00B|r)出地
+Hotkey=B
+Unhotkey=B
+ 
+//蝗虫群
+[AUls]
+Tip=(|cffffcc00R|r)蝗虫群
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)蝗虫群”
+Researchhotkey=R
+ 
+//死亡骑士
+[Udea]
+Tip=召唤(|cffffcc00D|r)死亡骑士
+Revivetip=复活(|cffffcc00D|r)死亡骑士
+Awakentip=复活(|cffffcc00D|r)死亡骑士
+Hotkey=D
+ 
+//死亡缠绕
+[AUdc]
+Tip= (|cffffcc00Q|r)死亡缠绕 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)死亡缠绕 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)死亡缠绕 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)死亡缠绕 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//邪恶光环
+[AUau]
+Tip=邪恶光环 —— [|cffffcc00等级 1|r],邪恶光环 —— [|cffffcc00等级 2|r],邪恶光环 —— [|cffffcc00等级 3|r]
+Researchtip=“ (|cffffcc00U|r)学习邪恶光环 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=U
+ 
+//死亡契约
+[AUdp]
+Tip= (|cffffcc00E|r)死亡契约 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)死亡契约 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)死亡契约 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)腐臭蜂群 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//操纵死尸
+[AUan]
+Tip= (|cffffcc00R|r)操纵死尸
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)操纵死尸”
+Researchhotkey=R
+ 
+//恐惧魔王
+[Udre]
+Tip=召唤(|cffffcc00E|r)恐惧魔王
+Revivetip=复活(|cffffcc00e|r)恐惧魔王
+Awakentip=复活(|cffffcc00e|r)恐惧魔王
+Hotkey=E
+ 
+//腐臭蜂群
+[AUcs]
+Tip=(|cffffcc00Q|r)腐臭蜂群 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)腐臭蜂群 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)腐臭蜂群 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)腐臭蜂群 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//睡眠
+[AUsl]
+Tip= (|cffffcc00e|r)睡眠 —— [|cffffcc00等级 1|r],(|cffffcc00e|r)睡眠 —— [|cffffcc00等级 2|r],(|cffffcc00e|r)睡眠 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00e|r)睡眠 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//吸血光环
+[AUav]
+Tip=吸血光环 —— [|cffffcc00等级 1|r],吸血光环 —— [|cffffcc00等级 2|r],吸血光环 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(|cffffcc00V|r)吸血光环 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=V
+ 
+//地狱火
+[AUin]
+Tip= (|cffffcc00R|r)地狱火
+Hotkey=R
+Researchtip=学习(|cffffcc00R|r)地狱火
+Researchhotkey=R
+ 
+//巫妖
+[Ulic]
+Tip=召唤(|cffffcc00L|r)巫妖
+Revivetip=复活(|cffffcc00L|r)巫妖
+Awakentip=复活(|cffffcc00L|r)巫妖
+Hotkey=L
+ 
+//霜冻新星
+[AUfn]
+Tip= (|cffffcc00Q|r)霜冻新星 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)霜冻新星 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)霜冻新星 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)霜冻新星 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
+ 
+//霜冻护甲
+[AUfu]
+Tip=(|cffffcc00W|r)霜冻护甲 —— [|cffffcc00等级 1|r],(|cffffcc00W|r)霜冻护甲 —— [|cffffcc00等级 2|r],(|cffffcc00W|r)霜冻护甲 —— [|cffffcc00等级 3|r]
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=W
+Researchtip=“学习(|cffffcc00W|r)黑暗仪式 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
+ 
+//黑暗仪式
+[AUdr]
+Tip= (|cffffcc00R|r)黑暗仪式 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)黑暗仪式 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)黑暗仪式 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)黑暗仪式 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//死亡凋零
+[AUdd]
+Tip=(|cffffcc00R|r)死亡凋零
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)死亡凋零”
+Researchhotkey=R
+ 
+ 
+//////////////////////////////////////////////////////
+// 中立英雄，中立英雄技能
+// 包括中立英雄召唤单位技能
+// 并不包括雇佣兵和雇佣兵技能
+//////////////////////////////////////////////////////
+ 
+/////////////////////
+// 娜迦女海巫技能
+/////////////////////
+ 
+//娜迦女海巫
+[Nngs]
+Hotkey=G
+Tip= (|cffffcc00g|r)召唤娜迦女海巫
+Revivetip= (|cffffcc00g|r)复活娜迦女海巫
+Awakentip= (|cffffcc00g|r)复活娜迦女海巫
+ 
+//魔法护盾
+[ANms]
+Tip=激活(|cffffcc00n|r)魔法护盾 —— [|cffffcc00等级 1|r],激活(|cffffcc00n|r)魔法护盾 —— [|cffffcc00等级 2|r],激活(|cffffcc00n|r)魔法护盾 —— [|cffffcc00等级 3|r]
+Untip=取消(|cffffcc00n|r)魔力护盾
+Hotkey=N
+Unhotkey=N
+Researchtip=“学习(|cffffcc00n|r)魔法护盾 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=N
+ 
+//叉状闪电
+[ANfl]
+Tip=(|cffffcc00F|r)叉状闪电 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)叉状闪电 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)叉状闪电 —— [|cffffcc00等级 3|r]
+Hotkey=F
+Researchtip=“学习(|cffffcc00F|r)叉状闪电 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=F
+ 
+//霜冻之箭 
+[ANfa]
+Tip= (|cffffcc00r|r)霜冻之箭 —— [|cffffcc00等级 1|r],(|cffffcc00r|r)霜冻之箭 —— [|cffffcc00等级 2|r],(|cffffcc00r|r)霜冻之箭 —— [|cffffcc00等级 3|r]
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=R
+Unhotkey=R
+Researchtip=“学习(|cffffcc00r|r)霜冻之箭 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=R
+ 
+//龙卷风
+[ANto]
+Tip=(|cffffcc00T|r)龙卷风
+Hotkey=T
+Researchtip=“学习(|cffffcc00T|r)龙卷风”
+Researchhotkey=T
+ 
+/////////////////////
+// 深渊魔王
+/////////////////////
+ 
+//深渊魔王
+[Nplh]
+Hotkey=I
+Tip=召唤(|cffffcc00i|r)深渊魔王
+Revivetip=复活(|cffffcc00i|r)深渊魔王
+Awakentip=复活(|cffffcc00i|r)深渊魔王
+ 
+//恐怖嚎叫
+[ANht]
+Tip= (|cffffcc00T|r)恐怖嚎叫 —— [|cffffcc00等级 1|r],(|cffffcc00T|r)恐怖嚎叫 —— [|cffffcc00等级 2|r],(|cffffcc00T|r)恐怖嚎叫 —— [|cffffcc00等级 3|r]
+Hotkey=T
+Researchtip=“学习(|cffffcc00T|r)恐怖嚎叫 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=T
+ 
+//火焰雨
+[ANrf]
+Tip= (|cffffcc00F|r)火焰雨—— [|cffffcc00等级 1|r],(|cffffcc00F|r)火焰雨—— [|cffffcc00等级 2|r],(|cffffcc00F|r)火焰雨—— [|cffffcc00等级 3|r]
+Hotkey=F
+Researchtip=学习(|cffffcc00F|r)火焰雨—— [|cffffcc00等级 %d|r]
+Researchhotkey=F
+ 
+//分裂攻击
+[ANca]
+Tip=分裂攻击 —— [|cffffcc00等级 1|r],分裂攻击 —— [|cffffcc00等级 2|r],分裂攻击 —— [|cffffcc00等级 3|r]
+Researchtip=“学习(cffffcc00C|r)分裂攻击 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=C
+ 
+//毁灭
+[ANdo]
+Tip=(|cffffcc00D|r)毁灭
+Hotkey=D
+Researchtip=“学习(|cffffcc00D|r)毁灭”
+Researchhotkey=D
+ 
+ 
+////////////////////////////////
+// 熊猫酒仙
+////////////////////////////////
+ 
+//熊猫酒仙
+[Npbm]
+Hotkey=N
+Tip= (|cffffcc00n|r)召唤熊猫酒仙
+Revivetip= (|cffffcc00n|r)复活熊猫酒仙
+Awakentip= (|cffffcc00n|r)复活熊猫酒仙
+ 
+//火焰呼吸
+[ANbf]
+Tip= (|cffffcc00F|r)火焰呼吸 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)火焰呼吸 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)火焰呼吸 —— [|cffffcc00等级 3|r]
+Hotkey=F
+Researchtip=“学习火焰呼吸(|cffffcc00F|r) —— [|cffffcc00等级 %d|r]”
+Researchhotkey=F
+ 
+//醉拳
+[ANdb]
+Tip=醉拳 —— [|cffffcc00等级 1|r],醉拳 —— [|cffffcc00等级 2|r],醉拳 —— [|cffffcc00等级 3|r]
+Researchtip=“ (|cffffcc00B|r)学习醉拳 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=B
+ 
+//醉酒云雾
+[ANdh]
+Tip=(|cffffcc00D|r)醉酒云雾 —— [|cffffcc00等级 1|r],(|cffffcc00D|r)醉酒云雾 —— [|cffffcc00等级 2|r],(|cffffcc00D|r)醉酒云雾 —— [|cffffcc00等级 3|r]
+Hotkey=D
+Researchtip=“学习(|cffffcc00D|r)醉酒云雾 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=D
+ 
+//火土风暴
+[ANef]
+Tip=“ (|cffffcc00E|r)火土风暴”
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)火土风暴”
+Researchhotkey=E
+ 
+ 
+//////////////////////
+//小熊猫技能
+//////////////////////
+ 
+//疾风步
+[ANwk]
+Tip=(|cffffcc00W|r)疾风步
+Hotkey=W
+ 
+//飓风
+[ACcy]
+Tip=(|cffffcc00C|r)飓风
+Hotkey=C
+ 
+//驱逐魔法
+[Adsm]
+Tip=(|cffffcc00D|r)驱逐魔法
+Hotkey=D
+ 
+//嘲讽
+[ANta]
+Tip=(|cffffcc00T|r)嘲讽
+Hotkey=T
+ 
+ 
+////////////////////////
+// 驯兽师
+////////////////////////
+ 
+//驯兽师
+[Nbst]
+Hotkey=S
+Tip=召唤(|cffffcc00s|r)驯兽师
+Revivetip=复活(|cffffcc00s|r)驯兽师
+Awakentip=复活(|cffffcc00s|r)驯兽师
+ 
+//熊
+[ANsg]
+Tip=召唤(|cffffcc00B|r)熊 —— [|cffffcc00等级 1|r],召唤 (|cffffcc00B|r)熊 —— [|cffffcc00等级 2|r],召唤 (|cffffcc00B|r)熊 —— [|cffffcc00等级 3|r]
+Hotkey=B
+Researchtip=学习召唤(|cffffcc00B|r)熊 —— [|cffffcc00等级 %d|r]
+Researchhotkey=B
+ 
+//豪猪
+[ANsq]
+Tip=召唤(|cffffcc00Q|r)豪猪 —— [|cffffcc00等级 1|r],召唤(|cffffcc00Q|r)豪猪 —— [|cffffcc00等级 2|r],召唤(|cffffcc00Q|r)豪猪 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=学习(|cffffcc00Q|r)召唤豪猪 —— [|cffffcc00等级 %d|r]
+Researchhotkey=Q
+ 
+//战鹰
+[ANsw]
+Tip=召唤(|cffffcc00W|r)召唤战鹰 —— [|cffffcc00等级 1|r],召唤(|cffffcc00W|r)召唤战鹰 —— [|cffffcc00等级 2|r],召唤(|cffffcc00W|r)召唤战鹰 —— [|cffffcc00等级 3|r]
+Hotkey=W
+Researchtip=学习(|cffffcc00W|r)召唤战鹰 —— [|cffffcc00等级 %d|r]
+Researchhotkey=W
+ 
+//惊吓
+[ANst]
+Tip= (|cffffcc00t|r)惊吓
+Hotkey=T
+Researchtip=学习(|cffffcc00t|r)惊吓
+Researchhotkey=T
+ 
+//闪烁
+[ANbl]
+Hotkey=B
+Tip=(|cffffcc00B|r)闪烁
+ 
+ 
+///////////////////////
+// 黑暗游侠
+///////////////////////
+ 
+[Nbrn]
+Hotkey=R
+Tip= (|cffffcc00R|r)召唤黑暗游侠
+Revivetip= (|cffffcc00R|r)复活黑暗游侠
+Awakentip= (|cffffcc00R|r)复活黑暗游侠
+ 
+//黑暗之箭
+[ANba]
+Tip=(|cffffcc00B|r)黑暗之箭 —— [|cffffcc00等级 1|r],(|cffffcc00B|r)黑暗之箭 —— [|cffffcc00等级 2|r],(|cffffcc00B|r)黑暗之箭 —— [|cffffcc00等级 3|r]
+Untip=“|cffc3dbff右键激活自动施放。|r”
+Hotkey=B
+Researchtip=“学习(|cffffcc00B|r)黑暗之箭 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=B
+ 
+//沉默魔法
+[ANsi]
+Tip= (|cffffcc00e|r)沉默魔法 —— [|cffffcc00等级 1|r],(|cffffcc00e|r)沉默魔法 —— [|cffffcc00等级 2|r],(|cffffcc00e|r)沉默魔法 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00e|r)沉默魔法 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//生命汲取
+[ANdr]
+Tip= (|cffffcc00D|r)生命汲取 —— [|cffffcc00等级 1|r],(|cffffcc00D|r)生命汲取 —— [|cffffcc00等级 2|r],(|cffffcc00D|r)生命汲取 —— [|cffffcc00等级 3|r]
+Hotkey=D
+Researchtip=“学习(|cffffcc00D|r)生命汲取 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=D
+ 
+//符咒
+[ANch]
+Tip=(|cffffcc00C|r)符咒
+Hotkey=C
+Researchtip=学习(|cffffcc00C|r)符咒
+Researchhotkey=C
+ 
+ 
+///////////////////////
+// 修补匠
+///////////////////////
+ 
+//修补匠
+[Ntin]
+Tip=(|cffffcc00Z|r)召唤修补匠
+Hotkey=Z
+Revivetip= (|cffffcc00Z|r)复活修补匠
+Awakentip= (|cffffcc00Z|r)复活修补匠
+ 
+//修补匠
+[Nrob]
+Tip=(|cffffcc00Z|r)召唤修补匠
+Hotkey=Z
+Revivetip= (|cffffcc00Z|r)复活修补匠
+Awakentip= (|cffffcc00Z|r)复活修补匠
+ 
+//口袋工厂
+[ANsy]
+Tip= (|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 3|r]
+Hotkey=F
+Researchtip= “(|cffffcc00F|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=F
+ 
+//口袋工厂
+[ANs1]
+Tip=(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 3|r]
+Hotkey=F
+Researchtip= “(|cffffcc00F|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=F
+ 
+//口袋工厂
+[ANs2]
+Tip=(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 3|r]
+Hotkey=F
+Researchtip= “(|cffffcc00F|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=F
+ 
+//口袋工厂
+[ANs3]
+Tip=(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 3|r]
+Hotkey=F
+Researchtip= “(|cffffcc00F|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=F
+ 
+//火箭群
+[ANcs]
+Tip=(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 3|r]
+Hotkey=R
+Researchtip=“ (|cffffcc00R|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=R
+ 
+//火箭群
+[ANc1]
+Tip=(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 3|r]
+Hotkey=R
+Researchtip=“ (|cffffcc00R|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=R
+ 
+//火箭群
+[ANc2]
+Tip=(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 3|r]
+Hotkey=R
+Researchtip=“ (|cffffcc00R|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=R
+ 
+//火箭群
+[ANc3]
+Tip=(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 3|r]
+Hotkey=R
+Researchtip=“ (|cffffcc00R|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=R
+ 
+//工程升级 
+[ANeg]
+Tip=工程升级 —— [|cffffcc00等级 1|r],工程升级 —— [|cffffcc00等级 2|r],工程升级 —— [|cffffcc00等级 3|r] 
+Hotkey=E
+Researchtip= “(|cffffcc00E|r)学习工程升级—— [|cffffcc00等级 %d|r]” 
+Researchhotkey=E
+ 
+//机器人地精
+[ANrg]
+Tip=“ (|cffffcc00b|r)机器人地精”
+Hotkey=B
+Untip=“ (|cffffcc00T|r)恢复到修补匠形态”
+Unhotkey=T
+Researchtip=“ (|cffffcc00b|r)学习机器人地精”
+Researchhotkey=B
+ 
+//机器人地精
+[ANg1]
+Tip=“ (|cffffcc00b|r)机器人地精”
+Hotkey=B
+Untip=“ (|cffffcc00T|r)恢复到修补匠形态”
+Unhotkey=T
+Researchtip=“ (|cffffcc00b|r)学习机器人地精”
+Researchhotkey=B
+ 
+//机器人地精
+[ANg2]
+Tip=“ (|cffffcc00b|r)机器人地精”
+Hotkey=B
+Untip=“ (|cffffcc00T|r)恢复到修补匠形态”
+Unhotkey=T
+Researchtip=“ (|cffffcc00b|r)学习机器人地精”
+Researchhotkey=B
+ 
+//机器人地精
+[ANg3]
+Tip=“ (|cffffcc00b|r)机器人地精”
+Hotkey=B
+Untip=“ (|cffffcc00T|r)恢复到修补匠形态”
+Unhotkey=T
+Researchtip=“ (|cffffcc00b|r)学习机器人地精”
+Researchhotkey=B
+ 
+//粉碎
+[ANde]
+Tip=“粉碎”
+Hotkey=
+ 
+//粉碎
+[ANd1]
+Tip=“粉碎 —— 升级 等级 1”
+Hotkey=
+ 
+//粉碎
+[ANd2]
+Tip= “粉碎 —— 升级 等级 2” 
+Hotkey=
+ 
+//粉碎
+[ANd3]
+Tip= “粉碎 —— 升级 等级 3” 
+Hotkey=
+ 
+[ANfy]
+Tip=“工厂”
+Hotkey=
+ 
+[ANf1]
+Tip=“工厂 —— 升级 等级 1” 
+Hotkey=
+ 
+[ANf2]
+Tip=“工厂 —— 升级 等级 2” 
+Hotkey=
+ 
+[ANf3]
+Tip=“工厂 —— 升级 等级 3” 
+Hotkey=
+ 
+//自爆！（等级1）
+[Asdg]
+Tip=(|cffffcc00b|r)自爆！
+Hotkey=B
+Unhotkey=B
+ 
+//自爆！（等级2）
+[Asd2]
+Tip=(|cffffcc00b|r)自爆！
+Hotkey=B
+Unhotkey=B
+ 
+//自爆！（等级3）
+[Asd3]
+Tip=(|cffffcc00b|r)自爆！
+Hotkey=B
+Unhotkey=B
+ 
+ 
+///////////////////////
+// 炼金术士
+///////////////////////
+ 
+//炼金术士
+[Nalc]
+Hotkey=X
+Tip= (|cffffcc00X|r)召唤炼金术士
+Revivetip=(|cffffcc00X|r)复活炼金术士 
+Awakentip=(|cffffcc00X|r)复活炼金术士 
+ 
+//炼金术士
+[Nalm]
+Hotkey=X
+Tip= (|cffffcc00X|r)召唤炼金术士
+Revivetip=(|cffffcc00X|r)复活炼金术士 
+Awakentip=(|cffffcc00X|r)复活炼金术士 
+ 
+//炼金术士
+[Nal2]
+Hotkey=X
+Tip= (|cffffcc00X|r)召唤炼金术士
+Revivetip=(|cffffcc00X|r)复活炼金术士 
+Awakentip=(|cffffcc00X|r)复活炼金术士 
+ 
+//炼金术士
+[Nal3]
+Hotkey=X
+Tip= (|cffffcc00X|r)召唤炼金术士
+Revivetip=(|cffffcc00X|r)复活炼金术士 
+Awakentip=(|cffffcc00X|r)复活炼金术士 
+ 
+//医疗气雾 
+[ANhs]
+Tip=(|cffffcc00e|r)医疗气雾 —— [|cffffcc00等级 1|r],(|cffffcc00e|r)医疗气雾 —— [|cffffcc00等级 2|r],(|cffffcc00e|r)医疗气雾 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“(|cffffcc00e|r)学习医疗气雾 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
+ 
+//酸性炸弹
+[ANab]
+Tip=(|cffffcc00B|r)酸性炸弹 —— [|cffffcc00等级 1|r],(|cffffcc00B|r)酸性炸弹 —— [|cffffcc00等级 2|r],(|cffffcc00B|r)酸性炸弹 —— [|cffffcc00等级 3|r]
+Hotkey=B
+Researchtip=“(|cffffcc00B|r)学习酸性炸弹 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=B
+ 
+//化学风暴
+[ANcr]
+Tip=(|cffffcc00R|r)化学风暴 —— [|cffffcc00等级 1|r],(|cffffcc00R|r)化学风暴 —— [|cffffcc00等级 2|r],(|cffffcc00R|r)化学风暴 —— [|cffffcc00等级 3|r]
+Hotkey=R
+Researchtip=“(|cffffcc00R|r)学习化学风暴 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=R
+ 
+//点金术
+[ANtm]
+Tip=“(|cffffcc00T|r)点金术”
+Hotkey=T
+Researchtip=“ (|cffffcc00T|r)学习点金术”
+Researchhotkey=T
+ 
+ 
+///////////////////////
+// 火焰巨魔
+///////////////////////
+ 
+[Nfir]
+Hotkey=O
+Tip= (|cffffcc00w|r)召唤火焰巨魔
+Revivetip=(|cffffcc00o|r)复活火焰巨魔
+Awakentip=(|cffffcc00o|r)复活火焰巨魔
+ 
+//燃灰
+[ANic]
+Tip=燃灰 —— [|cffffcc00等级 1|r],燃灰 —— [|cffffcc00等级 2|r],燃灰 —— [|cffffcc00等级 3|r] 
+Hotkey=C
+Researchtip=“(|cffffcc00c|r)学习燃灰 —— [|cffffcc00等级 %d|r]” 
+Researchhotkey=C
+ 
+//燃灰 (Arrow)
+[ANia]
+Tip=燃灰 —— [|cffffcc00等级 1|r],燃灰 —— [|cffffcc00等级 2|r],燃灰 —— [|cffffcc00等级 3|r] 
+Hotkey=C
+Researchtip=“(|cffffcc00c|r)学习燃灰 —— [|cffffcc00等级 %d|r]” 
+Researchhotkey=C
+ 
+//灵魂燃烧
+[ANso]
+Tip= (|cffffcc00B|r)灵魂燃烧 —— [|cffffcc00等级 1|r],(|cffffcc00B|r)灵魂燃烧 —— [|cffffcc00等级 2|r],(|cffffcc00B|r)灵魂燃烧 —— [|cffffcc00等级 3|r] 
+Hotkey=B
+Researchtip=“ (|cffffcc00B|r)学习灵魂燃烧 —— [|cffffcc00等级 %d|r]” 
+Researchhotkey=B
+ 
+//召唤炎魔
+[ANlm]
+Tip=(|cffffcc00w|r)召唤炎魔  —— [|cffffcc00等级 1|r],(|cffffcc00w|r)召唤炎魔  —— [|cffffcc00等级 2|r],(|cffffcc00w|r)召唤炎魔  —— [|cffffcc00等级 3|r] 
+Hotkey=W
+Researchtip=“(|cffffcc00w|r)学习召唤炎魔  —— [|cffffcc00等级 %d|r]” 
+Researchhotkey=W
+ 
+//火山爆发
+[ANvc]
+Tip=“(|cffffcc00V|r)火山爆发” 
+Hotkey=V
+Researchtip=“ (|cffffcc00V|r)学习火山爆发” 
+Researchhotkey=V
