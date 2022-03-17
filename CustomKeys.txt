@@ -2201,35 +2201,35 @@ Awakentip= (|cffffcc00g|r)复活娜迦女海巫
  
 //魔法护盾
 [ANms]
-Tip=激活(|cffffcc00n|r)魔法护盾 —— [|cffffcc00等级 1|r],激活(|cffffcc00n|r)魔法护盾 —— [|cffffcc00等级 2|r],激活(|cffffcc00n|r)魔法护盾 —— [|cffffcc00等级 3|r]
-Untip=取消(|cffffcc00n|r)魔力护盾
-Hotkey=N
-Unhotkey=N
-Researchtip=“学习(|cffffcc00n|r)魔法护盾 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=N
+Tip=激活(|cffffcc00E|r)魔法护盾 —— [|cffffcc00等级 1|r],激活(|cffffcc00E|r)魔法护盾 —— [|cffffcc00等级 2|r],激活(|cffffcc00E|r)魔法护盾 —— [|cffffcc00等级 3|r]
+Untip=取消(|cffffcc00E|r)魔力护盾
+Hotkey=E
+Unhotkey=E
+Researchtip=“学习(|cffffcc00E|r)魔法护盾 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
  
 //叉状闪电
 [ANfl]
-Tip=(|cffffcc00F|r)叉状闪电 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)叉状闪电 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)叉状闪电 —— [|cffffcc00等级 3|r]
-Hotkey=F
-Researchtip=“学习(|cffffcc00F|r)叉状闪电 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=F
+Tip=(|cffffcc00Q|r)叉状闪电 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)叉状闪电 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)叉状闪电 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)叉状闪电 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
  
 //霜冻之箭 
 [ANfa]
-Tip= (|cffffcc00r|r)霜冻之箭 —— [|cffffcc00等级 1|r],(|cffffcc00r|r)霜冻之箭 —— [|cffffcc00等级 2|r],(|cffffcc00r|r)霜冻之箭 —— [|cffffcc00等级 3|r]
+Tip= (|cffffcc00W|r)霜冻之箭 —— [|cffffcc00等级 1|r],(|cffffcc00W|r)霜冻之箭 —— [|cffffcc00等级 2|r],(|cffffcc00W|r)霜冻之箭 —— [|cffffcc00等级 3|r]
 Untip=“|cffc3dbff右键激活自动施放。|r”
-Hotkey=R
-Unhotkey=R
-Researchtip=“学习(|cffffcc00r|r)霜冻之箭 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=R
+Hotkey=W
+Unhotkey=W
+Researchtip=“学习(|cffffcc00W|r)霜冻之箭 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
  
 //龙卷风
 [ANto]
-Tip=(|cffffcc00T|r)龙卷风
-Hotkey=T
-Researchtip=“学习(|cffffcc00T|r)龙卷风”
-Researchhotkey=T
+Tip=(|cffffcc00R|r)龙卷风
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)龙卷风”
+Researchhotkey=R
  
 /////////////////////
 // 深渊魔王
@@ -2244,31 +2244,55 @@ Awakentip=复活(|cffffcc00i|r)深渊魔王
  
 //恐怖嚎叫
 [ANht]
-Tip= (|cffffcc00T|r)恐怖嚎叫 —— [|cffffcc00等级 1|r],(|cffffcc00T|r)恐怖嚎叫 —— [|cffffcc00等级 2|r],(|cffffcc00T|r)恐怖嚎叫 —— [|cffffcc00等级 3|r]
-Hotkey=T
-Researchtip=“学习(|cffffcc00T|r)恐怖嚎叫 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=T
+Tip= (|cffffcc00E|r)恐怖嚎叫 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)恐怖嚎叫 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)恐怖嚎叫 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)恐怖嚎叫 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
  
 //火焰雨
 [ANrf]
-Tip= (|cffffcc00F|r)火焰雨—— [|cffffcc00等级 1|r],(|cffffcc00F|r)火焰雨—— [|cffffcc00等级 2|r],(|cffffcc00F|r)火焰雨—— [|cffffcc00等级 3|r]
-Hotkey=F
-Researchtip=学习(|cffffcc00F|r)火焰雨—— [|cffffcc00等级 %d|r]
-Researchhotkey=F
+Tip= (|cffffcc00Q|r)火焰雨—— [|cffffcc00等级 1|r],(|cffffcc00Q|r)火焰雨—— [|cffffcc00等级 2|r],(|cffffcc00Q|r)火焰雨—— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=学习(|cffffcc00Q|r)火焰雨—— [|cffffcc00等级 %d|r]
+Researchhotkey=Q
  
 //分裂攻击
 [ANca]
 Tip=分裂攻击 —— [|cffffcc00等级 1|r],分裂攻击 —— [|cffffcc00等级 2|r],分裂攻击 —— [|cffffcc00等级 3|r]
-Researchtip=“学习(cffffcc00C|r)分裂攻击 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=C
+Researchtip=“学习(cffffcc00W|r)分裂攻击 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
  
 //毁灭
 [ANdo]
-Tip=(|cffffcc00D|r)毁灭
-Hotkey=D
-Researchtip=“学习(|cffffcc00D|r)毁灭”
-Researchhotkey=D
- 
+Tip=(|cffffcc00R|r)毁灭
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)毁灭”
+Researchhotkey=R
+
+////////////////////////////////
+// 毁灭守卫
+////////////////////////////////
+
+//驱逐魔法
+[Adsm]
+Tip=(|cffffcc00Q|r)驱逐魔法
+Hotkey=Q
+
+//战争践踏
+[awrs]
+Tip=(|cffffcc00W|r)驱逐魔法
+Hotkey=W
+
+//残废
+[accr]
+Tip=(|cffffcc00E|r)残废
+Hotkey=E
+
+//火焰雨
+[acrf]
+Tip=(|cffffcc00R|r)残废
+Hotkey=R
+Researchhotkey=R
  
 ////////////////////////////////
 // 熊猫酒仙
@@ -2283,30 +2307,30 @@ Awakentip= (|cffffcc00n|r)复活熊猫酒仙
  
 //火焰呼吸
 [ANbf]
-Tip= (|cffffcc00F|r)火焰呼吸 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)火焰呼吸 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)火焰呼吸 —— [|cffffcc00等级 3|r]
-Hotkey=F
-Researchtip=“学习火焰呼吸(|cffffcc00F|r) —— [|cffffcc00等级 %d|r]”
-Researchhotkey=F
+Tip= (|cffffcc00Q|r)火焰呼吸 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)火焰呼吸 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)火焰呼吸 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习火焰呼吸(|cffffcc00Q|r) —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
  
 //醉拳
 [ANdb]
 Tip=醉拳 —— [|cffffcc00等级 1|r],醉拳 —— [|cffffcc00等级 2|r],醉拳 —— [|cffffcc00等级 3|r]
-Researchtip=“ (|cffffcc00B|r)学习醉拳 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=B
+Researchtip=“ (|cffffcc00W|r)学习醉拳 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
  
 //醉酒云雾
 [ANdh]
-Tip=(|cffffcc00D|r)醉酒云雾 —— [|cffffcc00等级 1|r],(|cffffcc00D|r)醉酒云雾 —— [|cffffcc00等级 2|r],(|cffffcc00D|r)醉酒云雾 —— [|cffffcc00等级 3|r]
-Hotkey=D
-Researchtip=“学习(|cffffcc00D|r)醉酒云雾 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=D
+Tip=(|cffffcc00E|r)醉酒云雾 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)醉酒云雾 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)醉酒云雾 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)醉酒云雾 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
  
 //火土风暴
 [ANef]
-Tip=“ (|cffffcc00E|r)火土风暴”
-Hotkey=E
-Researchtip=“学习(|cffffcc00E|r)火土风暴”
-Researchhotkey=E
+Tip=“ (|cffffcc00R|r)火土风暴”
+Hotkey=R
+Researchtip=“学习(|cffffcc00R|r)火土风暴”
+Researchhotkey=R
  
  
 //////////////////////
@@ -2315,23 +2339,23 @@ Researchhotkey=E
  
 //疾风步
 [ANwk]
-Tip=(|cffffcc00W|r)疾风步
-Hotkey=W
+Tip=(|cffffcc00E|r)疾风步
+Hotkey=E
  
 //飓风
 [ACcy]
-Tip=(|cffffcc00C|r)飓风
-Hotkey=C
+Tip=(|cffffcc00W|r)飓风
+Hotkey=W
  
 //驱逐魔法
 [Adsm]
-Tip=(|cffffcc00D|r)驱逐魔法
-Hotkey=D
+Tip=(|cffffcc00Q|r)驱逐魔法
+Hotkey=Q
  
 //嘲讽
 [ANta]
-Tip=(|cffffcc00T|r)嘲讽
-Hotkey=T
+Tip=(|cffffcc00Q|r)嘲讽
+Hotkey=Q
  
  
 ////////////////////////
@@ -2347,31 +2371,31 @@ Awakentip=复活(|cffffcc00s|r)驯兽师
  
 //熊
 [ANsg]
-Tip=召唤(|cffffcc00B|r)熊 —— [|cffffcc00等级 1|r],召唤 (|cffffcc00B|r)熊 —— [|cffffcc00等级 2|r],召唤 (|cffffcc00B|r)熊 —— [|cffffcc00等级 3|r]
-Hotkey=B
-Researchtip=学习召唤(|cffffcc00B|r)熊 —— [|cffffcc00等级 %d|r]
-Researchhotkey=B
+Tip=召唤(|cffffcc00Q|r)熊 —— [|cffffcc00等级 1|r],召唤 (|cffffcc00Q|r)熊 —— [|cffffcc00等级 2|r],召唤 (|cffffcc00Q|r)熊 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=学习召唤(|cffffcc00Q|r)熊 —— [|cffffcc00等级 %d|r]
+Researchhotkey=Q
  
 //豪猪
 [ANsq]
-Tip=召唤(|cffffcc00Q|r)豪猪 —— [|cffffcc00等级 1|r],召唤(|cffffcc00Q|r)豪猪 —— [|cffffcc00等级 2|r],召唤(|cffffcc00Q|r)豪猪 —— [|cffffcc00等级 3|r]
-Hotkey=Q
-Researchtip=学习(|cffffcc00Q|r)召唤豪猪 —— [|cffffcc00等级 %d|r]
-Researchhotkey=Q
+Tip=召唤(|cffffcc00W|r)豪猪 —— [|cffffcc00等级 1|r],召唤(|cffffcc00W|r)豪猪 —— [|cffffcc00等级 2|r],召唤(|cffffcc00W|r)豪猪 —— [|cffffcc00等级 3|r]
+Hotkey=W
+Researchtip=学习(|cffffcc00W|r)召唤豪猪 —— [|cffffcc00等级 %d|r]
+Researchhotkey=W
  
 //战鹰
 [ANsw]
-Tip=召唤(|cffffcc00W|r)召唤战鹰 —— [|cffffcc00等级 1|r],召唤(|cffffcc00W|r)召唤战鹰 —— [|cffffcc00等级 2|r],召唤(|cffffcc00W|r)召唤战鹰 —— [|cffffcc00等级 3|r]
-Hotkey=W
-Researchtip=学习(|cffffcc00W|r)召唤战鹰 —— [|cffffcc00等级 %d|r]
-Researchhotkey=W
+Tip=召唤(|cffffcc00E|r)召唤战鹰 —— [|cffffcc00等级 1|r],召唤(|cffffcc00E|r)召唤战鹰 —— [|cffffcc00等级 2|r],召唤(|cffffcc00E|r)召唤战鹰 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=学习(|cffffcc00E|r)召唤战鹰 —— [|cffffcc00等级 %d|r]
+Researchhotkey=E
  
 //惊吓
 [ANst]
-Tip= (|cffffcc00t|r)惊吓
-Hotkey=T
-Researchtip=学习(|cffffcc00t|r)惊吓
-Researchhotkey=T
+Tip= (|cffffcc00R|r)惊吓
+Hotkey=R
+Researchtip=学习(|cffffcc00R|r)惊吓
+Researchhotkey=R
  
 //闪烁
 [ANbl]
@@ -2391,32 +2415,32 @@ Awakentip= (|cffffcc00R|r)复活黑暗游侠
  
 //黑暗之箭
 [ANba]
-Tip=(|cffffcc00B|r)黑暗之箭 —— [|cffffcc00等级 1|r],(|cffffcc00B|r)黑暗之箭 —— [|cffffcc00等级 2|r],(|cffffcc00B|r)黑暗之箭 —— [|cffffcc00等级 3|r]
+Tip=(|cffffcc00W|r)黑暗之箭 —— [|cffffcc00等级 1|r],(|cffffcc00W|r)黑暗之箭 —— [|cffffcc00等级 2|r],(|cffffcc00W|r)黑暗之箭 —— [|cffffcc00等级 3|r]
 Untip=“|cffc3dbff右键激活自动施放。|r”
-Hotkey=B
-Researchtip=“学习(|cffffcc00B|r)黑暗之箭 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=B
+Hotkey=W
+Researchtip=“学习(|cffffcc00W|r)黑暗之箭 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
  
 //沉默魔法
 [ANsi]
-Tip= (|cffffcc00e|r)沉默魔法 —— [|cffffcc00等级 1|r],(|cffffcc00e|r)沉默魔法 —— [|cffffcc00等级 2|r],(|cffffcc00e|r)沉默魔法 —— [|cffffcc00等级 3|r]
-Hotkey=E
-Researchtip=“学习(|cffffcc00e|r)沉默魔法 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=E
+Tip= (|cffffcc00Q|r)沉默魔法 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)沉默魔法 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)沉默魔法 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“学习(|cffffcc00Q|r)沉默魔法 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
  
 //生命汲取
 [ANdr]
-Tip= (|cffffcc00D|r)生命汲取 —— [|cffffcc00等级 1|r],(|cffffcc00D|r)生命汲取 —— [|cffffcc00等级 2|r],(|cffffcc00D|r)生命汲取 —— [|cffffcc00等级 3|r]
-Hotkey=D
-Researchtip=“学习(|cffffcc00D|r)生命汲取 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=D
+Tip= (|cffffcc00E|r)生命汲取 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)生命汲取 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)生命汲取 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“学习(|cffffcc00E|r)生命汲取 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
  
 //符咒
 [ANch]
-Tip=(|cffffcc00C|r)符咒
-Hotkey=C
-Researchtip=学习(|cffffcc00C|r)符咒
-Researchhotkey=C
+Tip=(|cffffcc00R|r)符咒
+Hotkey=R
+Researchtip=学习(|cffffcc00R|r)符咒
+Researchhotkey=R
  
  
 ///////////////////////
@@ -2439,31 +2463,31 @@ Awakentip= (|cffffcc00Z|r)复活修补匠
  
 //口袋工厂
 [ANsy]
-Tip= (|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 3|r]
-Hotkey=F
-Researchtip= “(|cffffcc00F|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=F
+Tip= (|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip= “(|cffffcc00Q|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
  
 //口袋工厂
 [ANs1]
-Tip=(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 3|r]
-Hotkey=F
-Researchtip= “(|cffffcc00F|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=F
+Tip=(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip= “(|cffffcc00Q|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
  
 //口袋工厂
 [ANs2]
-Tip=(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 3|r]
-Hotkey=F
-Researchtip= “(|cffffcc00F|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=F
+Tip=(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip= “(|cffffcc00Q|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
  
 //口袋工厂
 [ANs3]
-Tip=(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00F|r)口袋工厂 —— [|cffffcc00等级 3|r]
-Hotkey=F
-Researchtip= “(|cffffcc00F|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=F
+Tip=(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)口袋工厂 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip= “(|cffffcc00Q|r)学习口袋工厂 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
  
 //火箭群
 [ANcs]
@@ -2474,31 +2498,31 @@ Researchhotkey=R
  
 //火箭群
 [ANc1]
-Tip=(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 3|r]
-Hotkey=R
-Researchtip=“ (|cffffcc00R|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=R
+Tip=(|cffffcc00E|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)火箭群 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“ (|cffffcc00E|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
  
 //火箭群
 [ANc2]
-Tip=(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 3|r]
-Hotkey=R
-Researchtip=“ (|cffffcc00R|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=R
+Tip=(|cffffcc00E|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)火箭群 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“ (|cffffcc00E|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
  
 //火箭群
 [ANc3]
-Tip=(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00R|r)火箭群 —— [|cffffcc00等级 3|r]
-Hotkey=R
-Researchtip=“ (|cffffcc00R|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=R
+Tip=(|cffffcc00E|r)火箭群 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)火箭群 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)火箭群 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“ (|cffffcc00E|r)学习火箭群 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
  
 //工程升级 
 [ANeg]
 Tip=工程升级 —— [|cffffcc00等级 1|r],工程升级 —— [|cffffcc00等级 2|r],工程升级 —— [|cffffcc00等级 3|r] 
-Hotkey=E
-Researchtip= “(|cffffcc00E|r)学习工程升级—— [|cffffcc00等级 %d|r]” 
-Researchhotkey=E
+Hotkey=W
+Researchtip= “(|cffffcc00W|r)学习工程升级—— [|cffffcc00等级 %d|r]” 
+Researchhotkey=W
  
 //机器人地精
 [ANrg]
@@ -2511,30 +2535,30 @@ Researchhotkey=B
  
 //机器人地精
 [ANg1]
-Tip=“ (|cffffcc00b|r)机器人地精”
-Hotkey=B
-Untip=“ (|cffffcc00T|r)恢复到修补匠形态”
-Unhotkey=T
-Researchtip=“ (|cffffcc00b|r)学习机器人地精”
-Researchhotkey=B
+Tip=“ (|cffffcc00R|r)机器人地精”
+Hotkey=R
+Untip=“ (|cffffcc00R|r)恢复到修补匠形态”
+Unhotkey=R
+Researchtip=“ (|cffffcc00R|r)学习机器人地精”
+Researchhotkey=R
  
 //机器人地精
 [ANg2]
-Tip=“ (|cffffcc00b|r)机器人地精”
-Hotkey=B
-Untip=“ (|cffffcc00T|r)恢复到修补匠形态”
-Unhotkey=T
-Researchtip=“ (|cffffcc00b|r)学习机器人地精”
-Researchhotkey=B
+Tip=“ (|cffffcc00R|r)机器人地精”
+Hotkey=R
+Untip=“ (|cffffcc00R|r)恢复到修补匠形态”
+Unhotkey=R
+Researchtip=“ (|cffffcc00R|r)学习机器人地精”
+Researchhotkey=R
  
 //机器人地精
 [ANg3]
-Tip=“ (|cffffcc00b|r)机器人地精”
-Hotkey=B
-Untip=“ (|cffffcc00T|r)恢复到修补匠形态”
-Unhotkey=T
-Researchtip=“ (|cffffcc00b|r)学习机器人地精”
-Researchhotkey=B
+Tip=“ (|cffffcc00R|r)机器人地精”
+Hotkey=R
+Untip=“ (|cffffcc00R|r)恢复到修补匠形态”
+Unhotkey=R
+Researchtip=“ (|cffffcc00R|r)学习机器人地精”
+Researchhotkey=R
  
 //粉碎
 [ANde]
@@ -2574,21 +2598,21 @@ Hotkey=
  
 //自爆！（等级1）
 [Asdg]
-Tip=(|cffffcc00b|r)自爆！
-Hotkey=B
-Unhotkey=B
+Tip=(|cffffcc00Q|r)自爆！
+Hotkey=Q
+Unhotkey=Q
  
 //自爆！（等级2）
 [Asd2]
-Tip=(|cffffcc00b|r)自爆！
-Hotkey=B
-Unhotkey=B
+Tip=(|cffffcc00Q|r)自爆！
+Hotkey=Q
+Unhotkey=Q
  
 //自爆！（等级3）
 [Asd3]
-Tip=(|cffffcc00b|r)自爆！
-Hotkey=B
-Unhotkey=B
+Tip=(|cffffcc00Q|r)自爆！
+Hotkey=Q
+Unhotkey=Q
  
  
 ///////////////////////
@@ -2625,31 +2649,31 @@ Awakentip=(|cffffcc00X|r)复活炼金术士
  
 //医疗气雾 
 [ANhs]
-Tip=(|cffffcc00e|r)医疗气雾 —— [|cffffcc00等级 1|r],(|cffffcc00e|r)医疗气雾 —— [|cffffcc00等级 2|r],(|cffffcc00e|r)医疗气雾 —— [|cffffcc00等级 3|r]
-Hotkey=E
-Researchtip=“(|cffffcc00e|r)学习医疗气雾 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=E
+Tip=(|cffffcc00Q|r)医疗气雾 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)医疗气雾 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)医疗气雾 —— [|cffffcc00等级 3|r]
+Hotkey=Q
+Researchtip=“(|cffffcc00Q|r)学习医疗气雾 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=Q
  
 //酸性炸弹
 [ANab]
-Tip=(|cffffcc00B|r)酸性炸弹 —— [|cffffcc00等级 1|r],(|cffffcc00B|r)酸性炸弹 —— [|cffffcc00等级 2|r],(|cffffcc00B|r)酸性炸弹 —— [|cffffcc00等级 3|r]
-Hotkey=B
-Researchtip=“(|cffffcc00B|r)学习酸性炸弹 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=B
+Tip=(|cffffcc00E|r)酸性炸弹 —— [|cffffcc00等级 1|r],(|cffffcc00E|r)酸性炸弹 —— [|cffffcc00等级 2|r],(|cffffcc00E|r)酸性炸弹 —— [|cffffcc00等级 3|r]
+Hotkey=E
+Researchtip=“(|cffffcc00E|r)学习酸性炸弹 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=E
  
 //化学风暴
 [ANcr]
-Tip=(|cffffcc00R|r)化学风暴 —— [|cffffcc00等级 1|r],(|cffffcc00R|r)化学风暴 —— [|cffffcc00等级 2|r],(|cffffcc00R|r)化学风暴 —— [|cffffcc00等级 3|r]
-Hotkey=R
-Researchtip=“(|cffffcc00R|r)学习化学风暴 —— [|cffffcc00等级 %d|r]”
-Researchhotkey=R
+Tip=(|cffffcc00W|r)化学风暴 —— [|cffffcc00等级 1|r],(|cffffcc00W|r)化学风暴 —— [|cffffcc00等级 2|r],(|cffffcc00W|r)化学风暴 —— [|cffffcc00等级 3|r]
+Hotkey=W
+Researchtip=“(|cffffcc00W|r)学习化学风暴 —— [|cffffcc00等级 %d|r]”
+Researchhotkey=W
  
 //点金术
 [ANtm]
-Tip=“(|cffffcc00T|r)点金术”
-Hotkey=T
-Researchtip=“ (|cffffcc00T|r)学习点金术”
-Researchhotkey=T
+Tip=“(|cffffcc00R|r)点金术”
+Hotkey=R
+Researchtip=“ (|cffffcc00R|r)学习点金术”
+Researchhotkey=R
  
  
 ///////////////////////
@@ -2665,34 +2689,34 @@ Awakentip=(|cffffcc00o|r)复活火焰巨魔
 //燃灰
 [ANic]
 Tip=燃灰 —— [|cffffcc00等级 1|r],燃灰 —— [|cffffcc00等级 2|r],燃灰 —— [|cffffcc00等级 3|r] 
-Hotkey=C
-Researchtip=“(|cffffcc00c|r)学习燃灰 —— [|cffffcc00等级 %d|r]” 
-Researchhotkey=C
+Hotkey=E
+Researchtip=“(|cffffcc00E|r)学习燃灰 —— [|cffffcc00等级 %d|r]” 
+Researchhotkey=E
  
 //燃灰 (Arrow)
 [ANia]
 Tip=燃灰 —— [|cffffcc00等级 1|r],燃灰 —— [|cffffcc00等级 2|r],燃灰 —— [|cffffcc00等级 3|r] 
-Hotkey=C
-Researchtip=“(|cffffcc00c|r)学习燃灰 —— [|cffffcc00等级 %d|r]” 
-Researchhotkey=C
+Hotkey=E
+Researchtip=“(|cffffcc00E|r)学习燃灰 —— [|cffffcc00等级 %d|r]” 
+Researchhotkey=E
  
 //灵魂燃烧
 [ANso]
-Tip= (|cffffcc00B|r)灵魂燃烧 —— [|cffffcc00等级 1|r],(|cffffcc00B|r)灵魂燃烧 —— [|cffffcc00等级 2|r],(|cffffcc00B|r)灵魂燃烧 —— [|cffffcc00等级 3|r] 
-Hotkey=B
-Researchtip=“ (|cffffcc00B|r)学习灵魂燃烧 —— [|cffffcc00等级 %d|r]” 
-Researchhotkey=B
+Tip= (|cffffcc00Q|r)灵魂燃烧 —— [|cffffcc00等级 1|r],(|cffffcc00Q|r)灵魂燃烧 —— [|cffffcc00等级 2|r],(|cffffcc00Q|r)灵魂燃烧 —— [|cffffcc00等级 3|r] 
+Hotkey=Q
+Researchtip=“ (|cffffcc00Q|r)学习灵魂燃烧 —— [|cffffcc00等级 %d|r]” 
+Researchhotkey=Q
  
 //召唤炎魔
 [ANlm]
-Tip=(|cffffcc00w|r)召唤炎魔  —— [|cffffcc00等级 1|r],(|cffffcc00w|r)召唤炎魔  —— [|cffffcc00等级 2|r],(|cffffcc00w|r)召唤炎魔  —— [|cffffcc00等级 3|r] 
+Tip=(|cffffcc00W|r)召唤炎魔  —— [|cffffcc00等级 1|r],(|cffffcc00W|r)召唤炎魔  —— [|cffffcc00等级 2|r],(|cffffcc00W|r)召唤炎魔  —— [|cffffcc00等级 3|r] 
 Hotkey=W
-Researchtip=“(|cffffcc00w|r)学习召唤炎魔  —— [|cffffcc00等级 %d|r]” 
+Researchtip=“(|cffffcc00W|r)学习召唤炎魔  —— [|cffffcc00等级 %d|r]” 
 Researchhotkey=W
  
 //火山爆发
 [ANvc]
-Tip=“(|cffffcc00V|r)火山爆发” 
-Hotkey=V
-Researchtip=“ (|cffffcc00V|r)学习火山爆发” 
-Researchhotkey=V
+Tip=“(|cffffcc00R|r)火山爆发” 
+Hotkey=R
+Researchtip=“ (|cffffcc00R|r)学习火山爆发” 
+Researchhotkey=R
